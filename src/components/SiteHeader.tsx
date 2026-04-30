@@ -1,17 +1,21 @@
 import { Link } from "@tanstack/react-router";
 import { Phone, Menu, X } from "lucide-react";
 import { useState } from "react";
+import { useLang } from "@/i18n/LanguageProvider";
+import { LanguageSwitcher } from "@/components/LanguageSwitcher";
+import type { TranslationKey } from "@/i18n/translations";
 
-const nav = [
-  { to: "/", label: "Domů" },
-  { to: "/sluzby", label: "Služby" },
-  { to: "/realizace", label: "Realizace" },
-  { to: "/o-nas", label: "O firmě" },
-  { to: "/kontakt", label: "Kontakt" },
-] as const;
+const nav: { to: string; key: TranslationKey }[] = [
+  { to: "/", key: "nav.home" },
+  { to: "/sluzby", key: "nav.services" },
+  { to: "/realizace", key: "nav.gallery" },
+  { to: "/o-nas", key: "nav.about" },
+  { to: "/kontakt", key: "nav.contact" },
+];
 
 export function SiteHeader() {
   const [open, setOpen] = useState(false);
+  const { t } = useLang();
 
   return (
     <header className="sticky top-0 z-50 border-b border-border/60 bg-background/85 backdrop-blur-md">
@@ -26,7 +30,7 @@ export function SiteHeader() {
               Zámečnictví Dvořáček
             </div>
             <div className="text-[10px] uppercase tracking-[0.2em] text-muted-foreground mt-1">
-              Kovovýroba • Zámečnictví • Nýrsko
+              {t("header.tagline")}
             </div>
           </div>
         </Link>
@@ -40,12 +44,13 @@ export function SiteHeader() {
               activeProps={{ className: "text-foreground" }}
               activeOptions={{ exact: n.to === "/" }}
             >
-              {n.label}
+              {t(n.key)}
             </Link>
           ))}
         </nav>
 
         <div className="flex items-center gap-3">
+          <LanguageSwitcher className="hidden md:inline-flex" />
           <a
             href="tel:+420376570591"
             className="hidden md:inline-flex items-center gap-2 bg-primary px-5 py-2.5 text-sm font-bold uppercase tracking-wider text-primary-foreground transition-transform hover:-translate-y-0.5"
@@ -53,6 +58,7 @@ export function SiteHeader() {
             <Phone className="h-4 w-4" />
             376 570 591
           </a>
+          <LanguageSwitcher className="md:hidden" />
           <button
             type="button"
             aria-label="Menu"
@@ -76,7 +82,7 @@ export function SiteHeader() {
                 activeProps={{ className: "text-primary" }}
                 activeOptions={{ exact: n.to === "/" }}
               >
-                {n.label}
+                {t(n.key)}
               </Link>
             ))}
             <a

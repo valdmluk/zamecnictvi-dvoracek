@@ -2,6 +2,7 @@ import { Outlet, createRootRoute, HeadContent, Scripts } from "@tanstack/react-r
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
 import { Toaster } from "@/components/ui/sonner";
+import { LanguageProvider } from "@/i18n/LanguageProvider";
 
 import appCss from "../styles.css?url";
 
@@ -85,13 +86,15 @@ function RootShell({ children }: { children: React.ReactNode }) {
 
 function RootComponent() {
   return (
-    <div className="flex min-h-screen flex-col">
-      <SiteHeader />
-      <main className="flex-1">
-        <Outlet />
-      </main>
-      <SiteFooter />
-      <Toaster richColors theme="dark" position="top-center" />
-    </div>
+    <LanguageProvider>
+      <div className="flex min-h-screen flex-col">
+        <SiteHeader />
+        <main className="flex-1">
+          <Outlet />
+        </main>
+        <SiteFooter />
+        <Toaster richColors theme="dark" position="top-center" />
+      </div>
+    </LanguageProvider>
   );
 }

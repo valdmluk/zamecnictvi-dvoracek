@@ -2,6 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { SectionLabel } from "@/components/SectionLabel";
 import { ContactForm } from "@/components/ContactForm";
 import { Phone, Mail, MapPin, Globe, ExternalLink } from "lucide-react";
+import { useLang } from "@/i18n/LanguageProvider";
 
 export const Route = createFileRoute("/kontakt")({
   head: () => ({
@@ -12,11 +13,6 @@ export const Route = createFileRoute("/kontakt")({
         content:
           "Kontaktujte Zámečnictví Dvořáček s.r.o. — telefon +420 376 570 591, e-mail zamecnictvi@zamecnictvidvoracek.cz. Na vaši poptávku reagujeme co nejrychleji.",
       },
-      { property: "og:title", content: "Kontakt — Zámečnictví Dvořáček" },
-      {
-        property: "og:description",
-        content: "Telefon, e-mail a poptávkový formulář.",
-      },
     ],
   }),
   component: ContactPage,
@@ -26,27 +22,24 @@ const mapsUrl =
   "https://www.google.com/maps/search/?api=1&query=Dobrovsk%C3%A9ho+768%2C+340+22+N%C3%BDrsko";
 
 function ContactPage() {
+  const { t } = useLang();
   return (
     <>
       <section className="container-edge pt-16 md:pt-24">
-        <SectionLabel>Kontakt</SectionLabel>
+        <SectionLabel>{t("contact.label")}</SectionLabel>
         <h1 className="font-display text-5xl md:text-7xl font-bold uppercase leading-[0.95] max-w-3xl">
-          Pošlete poptávku. <br />
-          <span className="text-gradient-forge">Ozveme se co nejdříve.</span>
+          {t("contact.h1.prefix")} <br />
+          <span className="text-gradient-forge">{t("contact.h1.accent")}</span>
         </h1>
-        <p className="mt-6 max-w-2xl text-lg text-muted-foreground">
-          Napište nám, co potřebujete, nebo rovnou zavolejte. Ozveme se vám
-          a projdeme váš projekt krok za krokem.
-        </p>
+        <p className="mt-6 max-w-2xl text-lg text-muted-foreground">{t("contact.lead")}</p>
       </section>
 
       <section className="container-edge mt-12 grid gap-10 lg:grid-cols-[1fr_1.2fr] lg:gap-12">
-        {/* CONTACT INFO */}
         <div className="space-y-px h-fit">
           <div className="border border-border bg-card p-6 space-y-6">
             <div>
               <div className="text-[10px] uppercase tracking-[0.25em] text-muted-foreground mb-3">
-                Společnost
+                {t("contact.company")}
               </div>
               <div className="font-display text-xl font-bold uppercase tracking-wide">
                 Zámečnictví Dvořáček s.r.o.
@@ -63,7 +56,7 @@ function ContactPage() {
                 </div>
                 <div>
                   <div className="text-[10px] uppercase tracking-[0.25em] text-muted-foreground">
-                    Telefon
+                    {t("contact.phone")}
                   </div>
                   <div className="mt-1 font-display text-base md:text-lg font-bold flex flex-col">
                     <a href="tel:+420376570591" className="hover:text-primary transition-colors">
@@ -82,7 +75,7 @@ function ContactPage() {
                 </div>
                 <div className="min-w-0">
                   <div className="text-[10px] uppercase tracking-[0.25em] text-muted-foreground">
-                    E-mail
+                    {t("contact.email")}
                   </div>
                   <a
                     href="mailto:zamecnictvi@zamecnictvidvoracek.cz"
@@ -99,7 +92,7 @@ function ContactPage() {
                 </div>
                 <div>
                   <div className="text-[10px] uppercase tracking-[0.25em] text-muted-foreground">
-                    Web
+                    {t("contact.web")}
                   </div>
                   <a
                     href="https://www.zamecnictvidvoracek.cz"
@@ -118,7 +111,7 @@ function ContactPage() {
                 </div>
                 <div>
                   <div className="text-[10px] uppercase tracking-[0.25em] text-muted-foreground">
-                    Adresa
+                    {t("contact.address")}
                   </div>
                   <a
                     href={mapsUrl}
@@ -128,7 +121,7 @@ function ContactPage() {
                   >
                     Dobrovského 768<br />
                     340 22 Nýrsko<br />
-                    <span className="text-sm font-normal text-muted-foreground">Plzeňský kraj</span>
+                    <span className="text-sm font-normal text-muted-foreground">{t("contact.region")}</span>
                   </a>
                   <a
                     href={mapsUrl}
@@ -136,7 +129,7 @@ function ContactPage() {
                     rel="noopener noreferrer"
                     className="mt-3 inline-flex items-center gap-2 border border-border px-4 py-2 text-xs font-bold uppercase tracking-wider hover:border-primary hover:text-primary transition-colors"
                   >
-                    Zobrazit na mapě <ExternalLink className="h-3 w-3" />
+                    {t("contact.showOnMap")} <ExternalLink className="h-3 w-3" />
                   </a>
                 </div>
               </div>
@@ -144,19 +137,15 @@ function ContactPage() {
           </div>
         </div>
 
-        {/* FORM */}
         <div className="border border-border bg-card p-6 md:p-10">
           <h2 className="font-display text-2xl md:text-3xl font-bold uppercase tracking-wide mb-2">
-            Poptávkový formulář
+            {t("contact.form.title")}
           </h2>
-          <p className="text-sm text-muted-foreground mb-6">
-            Vyplňte, co potřebujete. Ozveme se vám co nejdříve.
-          </p>
+          <p className="text-sm text-muted-foreground mb-6">{t("contact.form.lead")}</p>
           <ContactForm />
         </div>
       </section>
 
-      {/* MAP */}
       <section className="container-edge mt-16">
         <div className="border border-border overflow-hidden">
           <iframe

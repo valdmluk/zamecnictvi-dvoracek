@@ -2,6 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { Gallery } from "@/components/Gallery";
 import { SectionLabel } from "@/components/SectionLabel";
 import { CtaBanner } from "@/components/CtaBanner";
+import { useLang } from "@/i18n/LanguageProvider";
 
 export const Route = createFileRoute("/realizace")({
   head: () => ({
@@ -12,25 +13,21 @@ export const Route = createFileRoute("/realizace")({
         content:
           "Naše realizace — zábradlí, schodiště, brány, vrata, ploty a ocelové konstrukce v Plzeňském kraji.",
       },
-      { property: "og:title", content: "Realizace — Zámečnictví Dvořáček" },
-      { property: "og:description", content: "Galerie naší kovovýroby a zámečnictví." },
     ],
   }),
   component: GalleryPage,
 });
 
 function GalleryPage() {
+  const { t } = useLang();
   return (
     <>
       <section className="container-edge pt-16 md:pt-24">
-        <SectionLabel>Naše realizace</SectionLabel>
+        <SectionLabel>{t("gallery.label")}</SectionLabel>
         <h1 className="font-display text-5xl md:text-7xl font-bold uppercase leading-[0.95] max-w-3xl">
-          Naše práce <span className="text-gradient-forge">v terénu.</span>
+          {t("gallery.h1.prefix")} <span className="text-gradient-forge">{t("gallery.h1.accent")}</span>
         </h1>
-        <p className="mt-6 max-w-2xl text-lg text-muted-foreground">
-          Vybrané zakázky — zábradlí, schodiště, brány a ploty, přístřešky
-          a ocelové konstrukce realizované po celém Plzeňském kraji a okolí.
-        </p>
+        <p className="mt-6 max-w-2xl text-lg text-muted-foreground">{t("gallery.lead")}</p>
       </section>
 
       <section className="container-edge mt-12">

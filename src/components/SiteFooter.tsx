@@ -1,10 +1,12 @@
 import { Link } from "@tanstack/react-router";
 import { Phone, Mail, MapPin, Globe, ExternalLink } from "lucide-react";
+import { useLang } from "@/i18n/LanguageProvider";
 
 const mapsUrl =
   "https://www.google.com/maps/search/?api=1&query=Dobrovsk%C3%A9ho+768%2C+340+22+N%C3%BDrsko";
 
 export function SiteFooter() {
+  const { t } = useLang();
   return (
     <footer className="border-t border-border bg-card/40 mt-24">
       <div className="h-1 stripe-bar opacity-80" />
@@ -19,15 +21,11 @@ export function SiteFooter() {
                 Zámečnictví Dvořáček
               </div>
               <div className="text-[10px] uppercase tracking-[0.2em] text-muted-foreground">
-                Kovovýroba • Zámečnictví • Nýrsko
+                {t("header.tagline")}
               </div>
             </div>
           </div>
-          <p className="mt-4 max-w-md text-sm text-muted-foreground">
-            Zakázková kovovýroba a stavební zámečnictví pro domácnosti, firmy
-            i stavební projekty po celém Plzeňském kraji a okolí. Zábradlí, schodiště, brány,
-            vrata, ploty a ocelové konstrukce na míru.
-          </p>
+          <p className="mt-4 max-w-md text-sm text-muted-foreground">{t("footer.lead")}</p>
           <div className="mt-5 text-xs text-muted-foreground space-y-1">
             <div>Zámečnictví Dvořáček s.r.o.</div>
             <div>IČ: 27970035 · DIČ: CZ27970035</div>
@@ -35,17 +33,17 @@ export function SiteFooter() {
         </div>
 
         <div>
-          <h4 className="font-display text-sm font-bold uppercase tracking-wider mb-4">Navigace</h4>
+          <h4 className="font-display text-sm font-bold uppercase tracking-wider mb-4">{t("footer.nav")}</h4>
           <ul className="space-y-2 text-sm text-muted-foreground">
-            <li><Link to="/sluzby" className="hover:text-foreground">Služby</Link></li>
-            <li><Link to="/realizace" className="hover:text-foreground">Realizace</Link></li>
-            <li><Link to="/o-nas" className="hover:text-foreground">O firmě</Link></li>
-            <li><Link to="/kontakt" className="hover:text-foreground">Kontakt</Link></li>
+            <li><Link to="/sluzby" className="hover:text-foreground">{t("nav.services")}</Link></li>
+            <li><Link to="/realizace" className="hover:text-foreground">{t("nav.gallery")}</Link></li>
+            <li><Link to="/o-nas" className="hover:text-foreground">{t("nav.about")}</Link></li>
+            <li><Link to="/kontakt" className="hover:text-foreground">{t("nav.contact")}</Link></li>
           </ul>
         </div>
 
         <div>
-          <h4 className="font-display text-sm font-bold uppercase tracking-wider mb-4">Kontakt</h4>
+          <h4 className="font-display text-sm font-bold uppercase tracking-wider mb-4">{t("footer.contact")}</h4>
           <ul className="space-y-3 text-sm text-muted-foreground">
             <li className="flex items-start gap-2">
               <Phone className="h-4 w-4 mt-0.5 text-primary shrink-0" />
@@ -89,7 +87,7 @@ export function SiteFooter() {
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 border border-border px-4 py-2 text-xs font-bold uppercase tracking-wider text-foreground hover:border-primary hover:text-primary transition-colors"
               >
-                Zobrazit na mapě <ExternalLink className="h-3 w-3" />
+                {t("contact.showOnMap")} <ExternalLink className="h-3 w-3" />
               </a>
             </li>
           </ul>
@@ -98,8 +96,8 @@ export function SiteFooter() {
 
       <div className="border-t border-border">
         <div className="container-edge py-5 flex flex-col md:flex-row items-center justify-between gap-2 text-xs text-muted-foreground">
-          <div>© {new Date().getFullYear()} Zámečnictví Dvořáček s.r.o. · Všechna práva vyhrazena</div>
-          <div className="uppercase tracking-[0.2em]">Vyrobeno z oceli · Postaveno pro generace</div>
+          <div>© {new Date().getFullYear()} Zámečnictví Dvořáček s.r.o. · {t("footer.rights")}</div>
+          <div className="uppercase tracking-[0.2em]">{t("footer.tagline")}</div>
         </div>
       </div>
     </footer>
