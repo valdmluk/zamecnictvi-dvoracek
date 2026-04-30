@@ -22,7 +22,7 @@ export function SiteFooter() {
           </div>
           <p className="mt-4 max-w-md text-sm text-muted-foreground">
             Zakázková kovovýroba a stavební zámečnictví pro domácnosti, firmy
-            i stavební projekty v Plzeňském kraji. Zábradlí, schodiště, brány,
+            i stavební projekty po celém Plzeňském kraji a okolí. Zábradlí, schodiště, brány,
             vrata, ploty a ocelové konstrukce na míru.
           </p>
           <div className="mt-5 text-xs text-muted-foreground space-y-1">

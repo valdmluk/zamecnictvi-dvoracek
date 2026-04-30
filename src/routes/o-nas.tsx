@@ -49,8 +49,8 @@ function AboutPage() {
               </p>
               <p>
                 Každou zakázku řešíme individuálně — od konzultace a zaměření přes
-                výrobu až po montáž. Pracujeme pro domácnosti, stavební firmy
-                i menší provozy v Plzeňském kraji.
+                výrobu až po montáž u zákazníka. Realizujeme zakázky pro domácnosti,
+                stavební firmy i menší provozy po celém Plzeňském kraji a okolí.
               </p>
             </div>
           </div>
