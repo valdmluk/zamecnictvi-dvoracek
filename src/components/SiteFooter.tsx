@@ -1,5 +1,8 @@
 import { Link } from "@tanstack/react-router";
-import { Phone, Mail, MapPin, Globe } from "lucide-react";
+import { Phone, Mail, MapPin, Globe, ExternalLink } from "lucide-react";
+
+const mapsUrl =
+  "https://www.google.com/maps/search/?api=1&query=Dobrovsk%C3%A9ho+768%2C+340+22+N%C3%BDrsko";
 
 export function SiteFooter() {
   return (
@@ -70,7 +73,24 @@ export function SiteFooter() {
             </li>
             <li className="flex items-start gap-2">
               <MapPin className="h-4 w-4 mt-0.5 text-primary shrink-0" />
-              <span>Dobrovského 768, 340 22 Nýrsko</span>
+              <a
+                href={mapsUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-foreground"
+              >
+                Dobrovského 768, 340 22 Nýrsko
+              </a>
+            </li>
+            <li>
+              <a
+                href={mapsUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 border border-border px-4 py-2 text-xs font-bold uppercase tracking-wider text-foreground hover:border-primary hover:text-primary transition-colors"
+              >
+                Zobrazit na mapě <ExternalLink className="h-3 w-3" />
+              </a>
             </li>
           </ul>
         </div>

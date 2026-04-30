@@ -120,11 +120,16 @@ function ContactPage() {
                   <div className="text-[10px] uppercase tracking-[0.25em] text-muted-foreground">
                     Adresa
                   </div>
-                  <div className="mt-1 font-display text-base md:text-lg font-bold leading-snug">
+                  <a
+                    href={mapsUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="mt-1 block font-display text-base md:text-lg font-bold leading-snug hover:text-primary transition-colors"
+                  >
                     Dobrovského 768<br />
                     340 22 Nýrsko<br />
                     <span className="text-sm font-normal text-muted-foreground">Plzeňský kraj</span>
-                  </div>
+                  </a>
                   <a
                     href={mapsUrl}
                     target="_blank"
@@ -145,7 +150,7 @@ function ContactPage() {
             Poptávkový formulář
           </h2>
           <p className="text-sm text-muted-foreground mb-6">
-            Vyplňte, co potřebujete. Ozveme se vám obvykle do 24 hodin.
+            Vyplňte, co potřebujete. Ozveme se vám co nejdříve.
           </p>
           <ContactForm />
         </div>
