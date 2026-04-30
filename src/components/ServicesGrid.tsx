@@ -4,33 +4,33 @@ import { ArrowUpRight, Fence, DoorOpen, MoveUpRight, Home, Wrench, Construction 
 const services = [
   {
     icon: Fence,
-    title: "Zábradlí",
-    desc: "Vnitřní i venkovní zábradlí na míru — moderní minimalistická i klasická provedení.",
-  },
-  {
-    icon: DoorOpen,
-    title: "Vrata a brány",
-    desc: "Posuvná, křídlová a pojezdová vrata pro rodinné domy i průmyslové areály.",
+    title: "Zábradlí na míru",
+    desc: "Vnitřní i venkovní zábradlí podle rozměrů, stylu domu a požadované povrchové úpravy.",
   },
   {
     icon: MoveUpRight,
     title: "Schodiště",
-    desc: "Ocelová schodiště — samonosná, točitá nebo s dřevěnými stupni.",
+    desc: "Rovná, šikmá i točitá schodiště pro rodinné domy, provozy a technické objekty.",
+  },
+  {
+    icon: DoorOpen,
+    title: "Brány, vrata a ploty",
+    desc: "Brány, vrata, branky a plotové prvky pro rodinné domy, firmy a areály.",
   },
   {
     icon: Home,
-    title: "Přístřešky",
-    desc: "Přístřešky pro auta, vchody i terasy. Ocel + sklo, polykarbonát nebo plech.",
+    title: "Přístřešky a ocelové konstrukce",
+    desc: "Ocelové konstrukce, přístřešky, rámy a svařované díly na míru.",
   },
   {
     icon: Construction,
-    title: "Ocelové konstrukce",
-    desc: "Haly, přístavby, nosné konstrukce. Kompletní dodávka včetně montáže.",
+    title: "Zakázková kovovýroba",
+    desc: "Zakázková výroba kovových dílů, plechových prvků a svařovaných konstrukcí.",
   },
   {
     icon: Wrench,
-    title: "Atypická výroba",
-    desc: "Cokoliv, co potřebujete vyrobit z oceli. Mříže, regály, nábytek, opravy.",
+    title: "Zámečnické opravy",
+    desc: "Opravy, úpravy a drobné zámečnické práce podle domluvy.",
   },
 ];
 

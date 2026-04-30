@@ -1,18 +1,18 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { SectionLabel } from "@/components/SectionLabel";
 import { ContactForm } from "@/components/ContactForm";
-import { Phone, Mail, MapPin, Clock } from "lucide-react";
+import { Phone, Mail, MapPin, Globe, ExternalLink } from "lucide-react";
 
 export const Route = createFileRoute("/kontakt")({
   head: () => ({
     meta: [
-      { title: "Kontakt — Poptávka kovovýroby | Nýrkov" },
+      { title: "Kontakt — Poptávka kovovýroby | Zámečnictví Dvořáček" },
       {
         name: "description",
         content:
-          "Kontaktujte nás telefonicky nebo přes formulář. Cenovou nabídku připravíme do 48 hodin. Nýrsko, Plzeňský kraj.",
+          "Kontaktujte Zámečnictví Dvořáček s.r.o. — telefon +420 376 570 591, e-mail zamecnictvi@zamecnictvidvoracek.cz. Cenovou nabídku připravíme do 48 hodin.",
       },
-      { property: "og:title", content: "Kontakt — Nýrkov kovovýroba" },
+      { property: "og:title", content: "Kontakt — Zámečnictví Dvořáček" },
       {
         property: "og:description",
         content: "Telefon, e-mail a poptávkový formulář.",
@@ -22,12 +22,8 @@ export const Route = createFileRoute("/kontakt")({
   component: ContactPage,
 });
 
-const contactItems = [
-  { icon: Phone, label: "Telefon", value: "+420 777 123 456", href: "tel:+420777123456" },
-  { icon: Mail, label: "E-mail", value: "info@nyrkov.cz", href: "mailto:info@nyrkov.cz" },
-  { icon: MapPin, label: "Adresa", value: "Strážovská 245, 340 22 Nýrsko" },
-  { icon: Clock, label: "Otevírací doba", value: "Po–Pá 7:00–16:00" },
-];
+const mapsUrl =
+  "https://www.google.com/maps/search/?api=1&query=Dobrovsk%C3%A9ho+768%2C+340+22+N%C3%BDrsko";
 
 function ContactPage() {
   return (
@@ -39,37 +35,108 @@ function ContactPage() {
           <span className="text-gradient-forge">Cenu znáte do 48h.</span>
         </h1>
         <p className="mt-6 max-w-2xl text-lg text-muted-foreground">
-          Napište nám, co potřebujete, nebo rovnou zavolejte. Cenovou nabídku
-          vám zpracujeme nezávazně a obvykle do dvou pracovních dnů.
+          Napište nám, co potřebujete, nebo rovnou zavolejte. Ozveme se vám
+          a projdeme váš projekt krok za krokem.
         </p>
       </section>
 
       <section className="container-edge mt-12 grid gap-10 lg:grid-cols-[1fr_1.2fr] lg:gap-12">
         {/* CONTACT INFO */}
-        <div className="space-y-px bg-border border border-border h-fit">
-          {contactItems.map((c) => {
-            const Icon = c.icon;
-            const Inner = (
-              <div className="bg-card p-6 flex items-start gap-4 transition-colors group-hover:bg-secondary">
-                <div className="flex h-12 w-12 items-center justify-center bg-background border border-border text-primary shrink-0">
-                  <Icon className="h-5 w-5" strokeWidth={1.5} />
+        <div className="space-y-px h-fit">
+          <div className="border border-border bg-card p-6 space-y-6">
+            <div>
+              <div className="text-[10px] uppercase tracking-[0.25em] text-muted-foreground mb-3">
+                Společnost
+              </div>
+              <div className="font-display text-xl font-bold uppercase tracking-wide">
+                Zámečnictví Dvořáček s.r.o.
+              </div>
+              <div className="text-xs text-muted-foreground mt-2">
+                IČ: 27970035 · DIČ: CZ27970035
+              </div>
+            </div>
+
+            <div className="border-t border-border pt-5 space-y-4">
+              <div className="flex items-start gap-3">
+                <div className="flex h-10 w-10 items-center justify-center bg-background border border-border text-primary shrink-0">
+                  <Phone className="h-4 w-4" strokeWidth={1.5} />
                 </div>
                 <div>
                   <div className="text-[10px] uppercase tracking-[0.25em] text-muted-foreground">
-                    {c.label}
+                    Telefon
                   </div>
-                  <div className="mt-1 font-display text-lg font-bold">{c.value}</div>
+                  <div className="mt-1 font-display text-base md:text-lg font-bold flex flex-col">
+                    <a href="tel:+420376570591" className="hover:text-primary transition-colors">
+                      +420 376 570 591
+                    </a>
+                    <a href="tel:+420777749422" className="hover:text-primary transition-colors">
+                      +420 777 749 422
+                    </a>
+                  </div>
                 </div>
               </div>
-            );
-            return c.href ? (
-              <a key={c.label} href={c.href} className="block group">
-                {Inner}
-              </a>
-            ) : (
-              <div key={c.label} className="group">{Inner}</div>
-            );
-          })}
+
+              <div className="flex items-start gap-3">
+                <div className="flex h-10 w-10 items-center justify-center bg-background border border-border text-primary shrink-0">
+                  <Mail className="h-4 w-4" strokeWidth={1.5} />
+                </div>
+                <div className="min-w-0">
+                  <div className="text-[10px] uppercase tracking-[0.25em] text-muted-foreground">
+                    E-mail
+                  </div>
+                  <a
+                    href="mailto:zamecnictvi@zamecnictvidvoracek.cz"
+                    className="mt-1 block font-display text-base md:text-lg font-bold break-all hover:text-primary transition-colors"
+                  >
+                    zamecnictvi@zamecnictvidvoracek.cz
+                  </a>
+                </div>
+              </div>
+
+              <div className="flex items-start gap-3">
+                <div className="flex h-10 w-10 items-center justify-center bg-background border border-border text-primary shrink-0">
+                  <Globe className="h-4 w-4" strokeWidth={1.5} />
+                </div>
+                <div>
+                  <div className="text-[10px] uppercase tracking-[0.25em] text-muted-foreground">
+                    Web
+                  </div>
+                  <a
+                    href="https://www.zamecnictvidvoracek.cz"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="mt-1 font-display text-base md:text-lg font-bold hover:text-primary transition-colors"
+                  >
+                    www.zamecnictvidvoracek.cz
+                  </a>
+                </div>
+              </div>
+
+              <div className="flex items-start gap-3">
+                <div className="flex h-10 w-10 items-center justify-center bg-background border border-border text-primary shrink-0">
+                  <MapPin className="h-4 w-4" strokeWidth={1.5} />
+                </div>
+                <div>
+                  <div className="text-[10px] uppercase tracking-[0.25em] text-muted-foreground">
+                    Adresa
+                  </div>
+                  <div className="mt-1 font-display text-base md:text-lg font-bold leading-snug">
+                    Dobrovského 768<br />
+                    340 22 Nýrsko<br />
+                    <span className="text-sm font-normal text-muted-foreground">Plzeňský kraj</span>
+                  </div>
+                  <a
+                    href={mapsUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="mt-3 inline-flex items-center gap-2 border border-border px-4 py-2 text-xs font-bold uppercase tracking-wider hover:border-primary hover:text-primary transition-colors"
+                  >
+                    Zobrazit na mapě <ExternalLink className="h-3 w-3" />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
 
         {/* FORM */}
@@ -78,7 +145,7 @@ function ContactPage() {
             Poptávkový formulář
           </h2>
           <p className="text-sm text-muted-foreground mb-6">
-            Vyplňte, co potřebujete. Ozveme se obvykle do 24 hodin.
+            Vyplňte, co potřebujete. Ozveme se vám obvykle do 24 hodin.
           </p>
           <ContactForm />
         </div>
@@ -88,7 +155,7 @@ function ContactPage() {
       <section className="container-edge mt-16">
         <div className="border border-border overflow-hidden">
           <iframe
-            title="Mapa — Nýrsko"
+            title="Mapa — Dobrovského 768, Nýrsko"
             src="https://www.openstreetmap.org/export/embed.html?bbox=13.13%2C49.27%2C13.18%2C49.30&amp;layer=mapnik&amp;marker=49.2867%2C13.1467"
             className="w-full h-[400px] grayscale-[60%] contrast-110"
             loading="lazy"

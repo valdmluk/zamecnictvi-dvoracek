@@ -10,16 +10,19 @@ export function CtaBanner() {
         <div className="relative grid gap-8 md:grid-cols-[1fr_auto] md:items-center">
           <div>
             <div className="text-xs font-bold uppercase tracking-[0.3em] text-primary mb-3">
-              Máte projekt?
+              Máte projekt? Pošlete poptávku.
             </div>
             <h2 className="font-display text-3xl md:text-5xl font-bold uppercase leading-tight">
-              Pošlete poptávku.<br />
-              <span className="text-gradient-forge">Cenu znáte do 48 hodin.</span>
+              Cenovou nabídku<br />
+              <span className="text-gradient-forge">připravíme do 48 hodin.</span>
             </h2>
+            <p className="mt-4 text-sm md:text-base text-muted-foreground max-w-xl">
+              Ozveme se vám a projdeme váš projekt krok za krokem.
+            </p>
           </div>
           <div className="flex flex-col sm:flex-row gap-3">
             <a
-              href="tel:+420777123456"
+              href="tel:+420376570591"
               className="inline-flex items-center justify-center gap-2 bg-primary px-6 py-4 text-sm font-bold uppercase tracking-wider text-primary-foreground"
             >
               <Phone className="h-4 w-4" /> Zavolat
@@ -28,7 +31,7 @@ export function CtaBanner() {
               to="/kontakt"
               className="inline-flex items-center justify-center gap-2 border border-border bg-background px-6 py-4 text-sm font-bold uppercase tracking-wider hover:border-primary hover:text-primary transition-colors"
             >
-              Poptávka <ArrowRight className="h-4 w-4" />
+              Poslat poptávku <ArrowRight className="h-4 w-4" />
             </Link>
           </div>
         </div>

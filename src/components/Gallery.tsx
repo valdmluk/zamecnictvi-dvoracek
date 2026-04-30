@@ -6,12 +6,12 @@ import structure from "@/assets/work-structure.jpg";
 import custom from "@/assets/work-custom.jpg";
 
 const items = [
-  { src: railing, title: "Moderní zábradlí", tag: "Rodinný dům · Klatovy", span: "md:col-span-2 md:row-span-2" },
-  { src: gate, title: "Vjezdová vrata", tag: "Rodinný dům · Plzeň" },
-  { src: staircase, title: "Ocelové schodiště", tag: "Interiér · Domažlice" },
-  { src: canopy, title: "Přístřešek pro auto", tag: "Rodinný dům · Nýrsko" },
-  { src: structure, title: "Ocelová hala", tag: "Průmysl · Sušice" },
-  { src: custom, title: "Kovářská práce", tag: "Atypická zakázka" },
+  { src: railing, title: "Zábradlí", tag: "Zábradlí • Klatovy", span: "md:col-span-2 md:row-span-2" },
+  { src: gate, title: "Brána a plot", tag: "Brána a plot • Plzeňský kraj" },
+  { src: staircase, title: "Schodiště", tag: "Schodiště • rodinný dům" },
+  { src: canopy, title: "Přístřešek", tag: "Přístřešek • Nýrsko" },
+  { src: structure, title: "Ocelová konstrukce", tag: "Ocelová konstrukce • Nýrsko" },
+  { src: custom, title: "Zakázková kovovýroba", tag: "Atypická zakázka" },
 ];
 
 export function Gallery({ limit }: { limit?: number }) {

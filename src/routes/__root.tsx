@@ -34,16 +34,16 @@ export const Route = createRootRoute({
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Nýrkov — Zakázková kovovýroba | Nýrsko, Plzeňsko" },
+      { title: "Zámečnictví Dvořáček — Kovovýroba na míru | Nýrsko, Plzeňsko" },
       {
         name: "description",
         content:
-          "Zakázková kovovýroba od roku 2000. Zábradlí, vrata, schodiště, přístřešky a ocelové konstrukce na míru. Nýrsko, Plzeňský kraj.",
+          "Zámečnictví Dvořáček s.r.o. — zakázková kovovýroba a stavební zámečnictví v Nýrsku. Zábradlí, schodiště, brány, vrata, ploty a ocelové konstrukce na míru.",
       },
-      { property: "og:title", content: "Nýrkov — Zakázková kovovýroba" },
+      { property: "og:title", content: "Zámečnictví Dvořáček — Kovovýroba na míru" },
       {
         property: "og:description",
-        content: "Ocelové konstrukce, zábradlí, vrata a schodiště na míru. Plzeňský kraj.",
+        content: "Zábradlí, schodiště, brány, vrata, ploty a ocelové konstrukce na míru. Nýrsko, Plzeňský kraj.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },

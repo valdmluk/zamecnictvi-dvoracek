@@ -50,7 +50,7 @@ export function ContactForm() {
           <label className="block text-xs uppercase tracking-wider mb-2 text-muted-foreground">
             Telefon *
           </label>
-          <input name="phone" required maxLength={30} className={field} placeholder="+420 777 123 456" />
+          <input name="phone" required maxLength={30} className={field} placeholder="+420 376 570 591" />
         </div>
       </div>
       <div>

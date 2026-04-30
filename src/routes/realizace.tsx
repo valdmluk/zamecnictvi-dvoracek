@@ -6,14 +6,14 @@ import { CtaBanner } from "@/components/CtaBanner";
 export const Route = createFileRoute("/realizace")({
   head: () => ({
     meta: [
-      { title: "Realizace — Galerie prací | Nýrkov kovovýroba" },
+      { title: "Realizace — Naše práce | Zámečnictví Dvořáček" },
       {
         name: "description",
         content:
-          "Ukázky našich realizací — zábradlí, vrata, schodiště, přístřešky a ocelové konstrukce po celém Plzeňském kraji.",
+          "Naše realizace — zábradlí, schodiště, brány, vrata, ploty a ocelové konstrukce v Plzeňském kraji.",
       },
-      { property: "og:title", content: "Realizace — Nýrkov" },
-      { property: "og:description", content: "Galerie naší kovovýroby." },
+      { property: "og:title", content: "Realizace — Zámečnictví Dvořáček" },
+      { property: "og:description", content: "Galerie naší kovovýroby a zámečnictví." },
     ],
   }),
   component: GalleryPage,
@@ -23,13 +23,13 @@ function GalleryPage() {
   return (
     <>
       <section className="container-edge pt-16 md:pt-24">
-        <SectionLabel>Realizace</SectionLabel>
+        <SectionLabel>Naše realizace</SectionLabel>
         <h1 className="font-display text-5xl md:text-7xl font-bold uppercase leading-[0.95] max-w-3xl">
           Naše práce <span className="text-gradient-forge">v terénu.</span>
         </h1>
         <p className="mt-6 max-w-2xl text-lg text-muted-foreground">
-          Vybrané zakázky z posledních let. Od minimalistických zábradlí přes
-          ocelové haly až po kovářské detaily.
+          Vybrané zakázky — zábradlí, schodiště, brány a ploty, přístřešky
+          a ocelové konstrukce z Plzeňského kraje.
         </p>
       </section>
 
