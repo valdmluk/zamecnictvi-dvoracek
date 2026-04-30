@@ -50,7 +50,7 @@ export function SiteHeader() {
         </nav>
 
         <div className="flex items-center gap-3">
-          <LanguageSwitcher className="hidden md:inline-flex" />
+          <LanguageSwitcher />
           <a
             href="tel:+420376570591"
             className="hidden md:inline-flex items-center gap-2 bg-primary px-5 py-2.5 text-sm font-bold uppercase tracking-wider text-primary-foreground transition-transform hover:-translate-y-0.5"
@@ -58,7 +58,6 @@ export function SiteHeader() {
             <Phone className="h-4 w-4" />
             376 570 591
           </a>
-          <LanguageSwitcher className="md:hidden" />
           <button
             type="button"
             aria-label="Menu"
