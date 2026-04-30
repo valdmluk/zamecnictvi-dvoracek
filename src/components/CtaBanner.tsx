@@ -14,7 +14,7 @@ export function CtaBanner() {
             </div>
             <h2 className="font-display text-3xl md:text-5xl font-bold uppercase leading-tight">
               Cenovou nabídku<br />
-              <span className="text-gradient-forge">připravíme do 48 hodin.</span>
+              <span className="text-gradient-forge">připravíme co nejdříve.</span>
             </h2>
             <p className="mt-4 text-sm md:text-base text-muted-foreground max-w-xl">
               Ozveme se vám a projdeme váš projekt krok za krokem.

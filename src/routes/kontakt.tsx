@@ -10,7 +10,7 @@ export const Route = createFileRoute("/kontakt")({
       {
         name: "description",
         content:
-          "Kontaktujte Zámečnictví Dvořáček s.r.o. — telefon +420 376 570 591, e-mail zamecnictvi@zamecnictvidvoracek.cz. Cenovou nabídku připravíme do 48 hodin.",
+          "Kontaktujte Zámečnictví Dvořáček s.r.o. — telefon +420 376 570 591, e-mail zamecnictvi@zamecnictvidvoracek.cz. Na vaši poptávku reagujeme co nejrychleji.",
       },
       { property: "og:title", content: "Kontakt — Zámečnictví Dvořáček" },
       {
@@ -32,7 +32,7 @@ function ContactPage() {
         <SectionLabel>Kontakt</SectionLabel>
         <h1 className="font-display text-5xl md:text-7xl font-bold uppercase leading-[0.95] max-w-3xl">
           Pošlete poptávku. <br />
-          <span className="text-gradient-forge">Cenu znáte do 48h.</span>
+          <span className="text-gradient-forge">Ozveme se co nejdříve.</span>
         </h1>
         <p className="mt-6 max-w-2xl text-lg text-muted-foreground">
           Napište nám, co potřebujete, nebo rovnou zavolejte. Ozveme se vám
