@@ -7,16 +7,16 @@ import { Check } from "lucide-react";
 export const Route = createFileRoute("/sluzby")({
   head: () => ({
     meta: [
-      { title: "Služby — Zakázková kovovýroba | Nýrkov" },
+      { title: "Služby — Zakázková kovovýroba | Zámečnictví Dvořáček" },
       {
         name: "description",
         content:
-          "Zábradlí, vrata, schodiště, přístřešky a ocelové konstrukce na míru. Návrh, výroba i montáž v Plzeňském kraji.",
+          "Zábradlí, schodiště, brány, vrata, ploty, ocelové konstrukce a zámečnické opravy na míru. Návrh, výroba i montáž v Plzeňském kraji.",
       },
-      { property: "og:title", content: "Služby — Nýrkov kovovýroba" },
+      { property: "og:title", content: "Služby — Zámečnictví Dvořáček" },
       {
         property: "og:description",
-        content: "Kompletní kovovýroba na míru pro domácnosti i firmy.",
+        content: "Kompletní kovovýroba a zámečnictví na míru pro domácnosti i firmy.",
       },
     ],
   }),
@@ -25,17 +25,17 @@ export const Route = createFileRoute("/sluzby")({
 
 const process = [
   { step: "01", title: "Konzultace", desc: "Probereme vaši představu, místo a termín. Telefon, e-mail nebo schůzka u vás." },
-  { step: "02", title: "Návrh & cena", desc: "Připravíme technický návrh a pevnou cenovou nabídku. Obvykle do 48 hodin." },
-  { step: "03", title: "Výroba", desc: "Vyrobíme v naší dílně v Nýrsku z kvalitních materiálů s atestem." },
-  { step: "04", title: "Montáž", desc: "Dovezeme a namontujeme. Po sobě uklidíme. Předáme s 5letou zárukou." },
+  { step: "02", title: "Návrh & cena", desc: "Připravíme technický návrh a cenovou nabídku. Obvykle do 48 hodin." },
+  { step: "03", title: "Výroba", desc: "Vyrobíme v naší dílně v Nýrsku z kvalitních materiálů s odpovídající povrchovou úpravou." },
+  { step: "04", title: "Montáž", desc: "Dovezeme a namontujeme podle domluvy. Po sobě uklidíme a předáme dílo." },
 ];
 
 const materials = [
   "Konstrukční ocel S235, S355",
   "Nerez AISI 304, 316",
   "Hliníkové profily",
-  "Žárově zinkováno / KTL / komaxit",
-  "Dřevo (dub, jasan) na schodiště",
+  "Žárově zinkováno / komaxit / nátěry",
+  "Dřevo na schodiště podle výběru",
   "Sklo, polykarbonát, plech pro přístřešky",
 ];
 
@@ -48,8 +48,8 @@ function ServicesPage() {
           Co pro vás <span className="text-gradient-forge">vyrobíme.</span>
         </h1>
         <p className="mt-6 max-w-2xl text-lg text-muted-foreground">
-          Od jednoduchého zábradlí po kompletní ocelovou halu. Vše navrženo,
-          vyrobeno a namontováno pod jednou střechou.
+          Od jednoduchého zábradlí po ocelovou konstrukci. Vše navrženo,
+          vyrobeno a namontováno v Plzeňském kraji.
         </p>
       </section>
 
@@ -86,8 +86,8 @@ function ServicesPage() {
               <span className="text-gradient-forge">co vydrží.</span>
             </h2>
             <p className="mt-4 text-muted-foreground">
-              Vybíráme materiály podle účelu — ne podle marže. Dlouhá životnost
-              je u kovovýroby všechno.
+              Materiál a povrchovou úpravu volíme podle účelu a prostředí, kde
+              bude dílo sloužit. Dlouhá životnost je u kovovýroby zásadní.
             </p>
           </div>
           <ul className="grid gap-3 sm:grid-cols-2">

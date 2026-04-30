@@ -1,5 +1,5 @@
 import { Link } from "@tanstack/react-router";
-import { Phone, Mail, MapPin } from "lucide-react";
+import { Phone, Mail, MapPin, Globe } from "lucide-react";
 
 export function SiteFooter() {
   return (
@@ -9,19 +9,26 @@ export function SiteFooter() {
         <div className="md:col-span-2">
           <div className="flex items-center gap-3">
             <div className="flex h-10 w-10 items-center justify-center bg-primary text-primary-foreground font-display text-xl font-bold">
-              N
+              D
             </div>
             <div>
-              <div className="font-display text-lg font-bold uppercase tracking-wide">Nýrkov</div>
+              <div className="font-display text-lg font-bold uppercase tracking-wide">
+                Zámečnictví Dvořáček
+              </div>
               <div className="text-[10px] uppercase tracking-[0.2em] text-muted-foreground">
-                Kovovýroba · od 2000
+                Kovovýroba • Zámečnictví • Nýrsko
               </div>
             </div>
           </div>
           <p className="mt-4 max-w-md text-sm text-muted-foreground">
-            Zakázková kovovýroba pro domácnosti i stavební firmy v Plzeňském kraji.
-            Zábradlí, vrata, schodiště, přístřešky a ocelové konstrukce na míru.
+            Zakázková kovovýroba a stavební zámečnictví pro domácnosti, firmy
+            i stavební projekty v Plzeňském kraji. Zábradlí, schodiště, brány,
+            vrata, ploty a ocelové konstrukce na míru.
           </p>
+          <div className="mt-5 text-xs text-muted-foreground space-y-1">
+            <div>Zámečnictví Dvořáček s.r.o.</div>
+            <div>IČ: 27970035 · DIČ: CZ27970035</div>
+          </div>
         </div>
 
         <div>
@@ -29,7 +36,7 @@ export function SiteFooter() {
           <ul className="space-y-2 text-sm text-muted-foreground">
             <li><Link to="/sluzby" className="hover:text-foreground">Služby</Link></li>
             <li><Link to="/realizace" className="hover:text-foreground">Realizace</Link></li>
-            <li><Link to="/o-nas" className="hover:text-foreground">O nás</Link></li>
+            <li><Link to="/o-nas" className="hover:text-foreground">O firmě</Link></li>
             <li><Link to="/kontakt" className="hover:text-foreground">Kontakt</Link></li>
           </ul>
         </div>
@@ -38,16 +45,32 @@ export function SiteFooter() {
           <h4 className="font-display text-sm font-bold uppercase tracking-wider mb-4">Kontakt</h4>
           <ul className="space-y-3 text-sm text-muted-foreground">
             <li className="flex items-start gap-2">
-              <Phone className="h-4 w-4 mt-0.5 text-primary" />
-              <a href="tel:+420777123456" className="hover:text-foreground">+420 777 123 456</a>
+              <Phone className="h-4 w-4 mt-0.5 text-primary shrink-0" />
+              <div className="flex flex-col">
+                <a href="tel:+420376570591" className="hover:text-foreground">+420 376 570 591</a>
+                <a href="tel:+420777749422" className="hover:text-foreground">+420 777 749 422</a>
+              </div>
             </li>
             <li className="flex items-start gap-2">
-              <Mail className="h-4 w-4 mt-0.5 text-primary" />
-              <a href="mailto:info@nyrkov.cz" className="hover:text-foreground">info@nyrkov.cz</a>
+              <Mail className="h-4 w-4 mt-0.5 text-primary shrink-0" />
+              <a href="mailto:zamecnictvi@zamecnictvidvoracek.cz" className="hover:text-foreground break-all">
+                zamecnictvi@zamecnictvidvoracek.cz
+              </a>
             </li>
             <li className="flex items-start gap-2">
-              <MapPin className="h-4 w-4 mt-0.5 text-primary" />
-              <span>Nýrsko, Plzeňský kraj</span>
+              <Globe className="h-4 w-4 mt-0.5 text-primary shrink-0" />
+              <a
+                href="https://www.zamecnictvidvoracek.cz"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-foreground"
+              >
+                www.zamecnictvidvoracek.cz
+              </a>
+            </li>
+            <li className="flex items-start gap-2">
+              <MapPin className="h-4 w-4 mt-0.5 text-primary shrink-0" />
+              <span>Dobrovského 768, 340 22 Nýrsko</span>
             </li>
           </ul>
         </div>
@@ -55,7 +78,7 @@ export function SiteFooter() {
 
       <div className="border-t border-border">
         <div className="container-edge py-5 flex flex-col md:flex-row items-center justify-between gap-2 text-xs text-muted-foreground">
-          <div>© {new Date().getFullYear()} Nýrkov s.r.o. · Všechna práva vyhrazena</div>
+          <div>© {new Date().getFullYear()} Zámečnictví Dvořáček s.r.o. · Všechna práva vyhrazena</div>
           <div className="uppercase tracking-[0.2em]">Vyrobeno z oceli · Postaveno pro generace</div>
         </div>
       </div>

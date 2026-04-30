@@ -6,7 +6,7 @@ const nav = [
   { to: "/", label: "Domů" },
   { to: "/sluzby", label: "Služby" },
   { to: "/realizace", label: "Realizace" },
-  { to: "/o-nas", label: "O nás" },
+  { to: "/o-nas", label: "O firmě" },
   { to: "/kontakt", label: "Kontakt" },
 ] as const;
 
@@ -18,13 +18,15 @@ export function SiteHeader() {
       <div className="container-edge flex h-16 items-center justify-between md:h-20">
         <Link to="/" className="flex items-center gap-3 group">
           <div className="relative flex h-10 w-10 items-center justify-center bg-primary text-primary-foreground font-display text-xl font-bold">
-            <span className="relative z-10">N</span>
+            <span className="relative z-10">D</span>
             <div className="absolute inset-0 stripe-bar opacity-20" />
           </div>
           <div className="leading-none">
-            <div className="font-display text-lg font-bold tracking-wide uppercase">Nýrkov</div>
-            <div className="text-[10px] uppercase tracking-[0.2em] text-muted-foreground">
-              Kovovýroba · Plzeňsko
+            <div className="font-display text-base md:text-lg font-bold tracking-wide uppercase">
+              Zámečnictví Dvořáček
+            </div>
+            <div className="text-[10px] uppercase tracking-[0.2em] text-muted-foreground mt-1">
+              Kovovýroba • Zámečnictví • Nýrsko
             </div>
           </div>
         </Link>
@@ -45,11 +47,11 @@ export function SiteHeader() {
 
         <div className="flex items-center gap-3">
           <a
-            href="tel:+420777123456"
+            href="tel:+420376570591"
             className="hidden md:inline-flex items-center gap-2 bg-primary px-5 py-2.5 text-sm font-bold uppercase tracking-wider text-primary-foreground transition-transform hover:-translate-y-0.5"
           >
             <Phone className="h-4 w-4" />
-            777 123 456
+            376 570 591
           </a>
           <button
             type="button"
@@ -78,10 +80,10 @@ export function SiteHeader() {
               </Link>
             ))}
             <a
-              href="tel:+420777123456"
+              href="tel:+420376570591"
               className="mt-3 inline-flex items-center justify-center gap-2 bg-primary px-5 py-3 text-sm font-bold uppercase tracking-wider text-primary-foreground"
             >
-              <Phone className="h-4 w-4" /> 777 123 456
+              <Phone className="h-4 w-4" /> 376 570 591
             </a>
           </div>
         </div>

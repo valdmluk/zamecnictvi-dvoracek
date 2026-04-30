@@ -9,11 +9,11 @@ import { CtaBanner } from "@/components/CtaBanner";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Nýrkov — Zakázková kovovýroba | Nýrsko, Plzeňsko" },
+      { title: "Zámečnictví Dvořáček — Kovovýroba na míru | Nýrsko, Plzeňsko" },
       {
         name: "description",
         content:
-          "Vyrábíme zábradlí, vrata, schodiště, přístřešky a ocelové konstrukce na míru. Od roku 2000 v Plzeňském kraji. Nezávazná poptávka do 48 hodin.",
+          "Zakázková kovovýroba a zámečnictví v Nýrsku. Zábradlí, schodiště, brány, vrata, ploty a ocelové konstrukce na míru. Cenovou nabídku připravíme do 48 hodin.",
       },
     ],
   }),
@@ -22,26 +22,33 @@ export const Route = createFileRoute("/")({
 
 const reasons = [
   {
-    icon: Clock,
-    title: "Od roku 2000",
-    desc: "Přes 25 let praxe a tisíce hotových zakázek po celém Plzeňském kraji.",
-    stat: "25+",
-    statLabel: "let zkušeností",
+    icon: Hammer,
+    title: "Vlastní výroba v Nýrsku",
+    desc: "Veškerá kovovýroba probíhá v naší dílně v Nýrsku — od návrhu po finální povrchovou úpravu.",
+    stat: "Nýrsko",
+    statLabel: "vlastní dílna",
   },
   {
-    icon: Hammer,
-    title: "Výroba na míru",
-    desc: "Každá zakázka je originál. Navrhneme, vyrobíme, dovezeme a namontujeme.",
+    icon: ShieldCheck,
+    title: "Individuální řešení na míru",
+    desc: "Každá zakázka je jiná. Navrhneme řešení podle vašich rozměrů, prostoru a stylu.",
     stat: "100%",
     statLabel: "na míru",
   },
   {
-    icon: ShieldCheck,
-    title: "Spolehlivost",
-    desc: "Termíny dodržujeme. Záruka na všechny práce. Bez výmluv.",
-    stat: "5 let",
-    statLabel: "záruka",
+    icon: Clock,
+    title: "Férová cenová nabídka",
+    desc: "Jasná domluva, konkrétní cena. Cenovou nabídku obvykle připravíme do 48 hodin.",
+    stat: "48h",
+    statLabel: "cenová nabídka",
   },
+];
+
+const trustItems = [
+  { label: "Od roku 2006" },
+  { label: "Zakázková kovovýroba" },
+  { label: "Cenová nabídka do 48 hodin" },
+  { label: "Nýrsko • Plzeňský kraj" },
 ];
 
 function HomePage() {
@@ -67,29 +74,32 @@ function HomePage() {
               <span className="h-2 w-2 bg-primary animate-pulse" />
               <span className="text-xs uppercase tracking-[0.25em] text-muted-foreground">
                 <MapPin className="inline h-3 w-3 mr-1 -mt-0.5" />
-                Nýrsko · Plzeňský kraj · od 2000
+                Nýrsko • Plzeňský kraj • od 2006
               </span>
             </div>
 
-            <h1 className="font-display text-5xl md:text-7xl lg:text-8xl font-bold uppercase leading-[0.95]">
-              Ocel, která <br />
-              <span className="text-gradient-forge">drží generace.</span>
+            <h1 className="font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold uppercase leading-[1.0]">
+              Zámečnictví Dvořáček —{" "}
+              <span className="text-gradient-forge">kovovýroba na míru v Plzeňském kraji.</span>
             </h1>
 
             <p className="mt-8 max-w-xl text-lg text-muted-foreground leading-relaxed">
-              Zakázková kovovýroba pro domácnosti i stavební firmy. Zábradlí, vrata,
-              schodiště, přístřešky a ocelové konstrukce — navržené a vyrobené přesně
-              podle vás.
+              Zábradlí, schodiště, brány, vrata, ploty, ocelové konstrukce a zakázková
+              kovovýroba. Navrhneme, vyrobíme a namontujeme řešení přesně podle vás.
+            </p>
+
+            <p className="mt-4 text-base font-semibold text-primary">
+              Cenovou nabídku připravíme do 48 hodin.
             </p>
 
             <div className="mt-10 flex flex-col sm:flex-row gap-4">
               <a
-                href="tel:+420777123456"
+                href="tel:+420376570591"
                 className="inline-flex items-center justify-center gap-3 bg-primary px-8 py-5 text-sm font-bold uppercase tracking-wider text-primary-foreground transition-transform hover:-translate-y-1"
                 style={{ boxShadow: "var(--shadow-forge)" }}
               >
                 <Phone className="h-5 w-5" />
-                Zavolat: 777 123 456
+                Zavolat a domluvit konzultaci
               </a>
               <Link
                 to="/kontakt"
@@ -99,25 +109,15 @@ function HomePage() {
               </Link>
             </div>
 
-            <div className="mt-14 grid grid-cols-3 gap-8 max-w-lg border-t border-border pt-8">
-              <div>
-                <div className="font-display text-3xl md:text-4xl font-bold text-primary">25+</div>
-                <div className="text-[10px] uppercase tracking-[0.2em] text-muted-foreground mt-1">
-                  let praxe
+            <div className="mt-14 grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 border-t border-border pt-8">
+              {trustItems.map((t) => (
+                <div key={t.label} className="flex items-start gap-2">
+                  <span className="mt-1.5 h-2 w-2 bg-primary shrink-0" />
+                  <div className="text-xs md:text-sm font-semibold uppercase tracking-wider text-foreground/90 leading-snug">
+                    {t.label}
+                  </div>
                 </div>
-              </div>
-              <div>
-                <div className="font-display text-3xl md:text-4xl font-bold text-primary">2000+</div>
-                <div className="text-[10px] uppercase tracking-[0.2em] text-muted-foreground mt-1">
-                  zakázek
-                </div>
-              </div>
-              <div>
-                <div className="font-display text-3xl md:text-4xl font-bold text-primary">48h</div>
-                <div className="text-[10px] uppercase tracking-[0.2em] text-muted-foreground mt-1">
-                  cenová nabídka
-                </div>
-              </div>
+              ))}
             </div>
           </div>
         </div>
@@ -129,7 +129,7 @@ function HomePage() {
       <section className="container-edge mt-24">
         <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-10">
           <div>
-            <SectionLabel>Co vyrábíme</SectionLabel>
+            <SectionLabel>Co pro vás vyrobíme</SectionLabel>
             <h2 className="font-display text-4xl md:text-5xl font-bold uppercase leading-tight max-w-2xl">
               Šest oborů. <span className="text-gradient-forge">Jeden řemeslný standard.</span>
             </h2>
@@ -148,15 +148,29 @@ function HomePage() {
       <section className="container-edge mt-24">
         <div className="grid gap-10 lg:grid-cols-[1fr_2fr] lg:gap-16">
           <div>
-            <SectionLabel>Proč Nýrkov</SectionLabel>
+            <SectionLabel>Proč Zámečnictví Dvořáček</SectionLabel>
             <h2 className="font-display text-4xl md:text-5xl font-bold uppercase leading-tight">
-              Bez kompromisů. <br />
-              <span className="text-gradient-forge">Bez výmluv.</span>
+              Jasná domluva. <br />
+              <span className="text-gradient-forge">Férová cena.</span>
             </h2>
             <p className="mt-6 text-muted-foreground leading-relaxed">
-              Jsme rodinná firma se sídlem v Nýrsku. Pracujeme s lidmi, ne přes
-              call centra. Co slíbíme, to uděláme — a uděláme to pořádně.
+              Jsme zámečnická a kovovýrobní firma z Nýrska. Děláme zakázkovou výrobu
+              pro domácnosti, firmy i stavební projekty v Plzeňském kraji.
             </p>
+            <ul className="mt-6 space-y-2 text-sm text-foreground/90">
+              {[
+                "Vlastní výroba v Nýrsku",
+                "Individuální řešení na míru",
+                "Kvalitní materiály a povrchové úpravy",
+                "Jasná domluva a férová cenová nabídka",
+                "Montáž podle domluvy",
+              ].map((p) => (
+                <li key={p} className="flex items-start gap-2">
+                  <span className="mt-1.5 h-1.5 w-1.5 bg-primary shrink-0" />
+                  {p}
+                </li>
+              ))}
+            </ul>
           </div>
           <div className="grid gap-px bg-border border border-border">
             {reasons.map((r) => {
@@ -173,7 +187,7 @@ function HomePage() {
                     <p className="text-sm text-muted-foreground mt-1">{r.desc}</p>
                   </div>
                   <div className="text-right">
-                    <div className="font-display text-3xl font-bold text-primary">{r.stat}</div>
+                    <div className="font-display text-2xl md:text-3xl font-bold text-primary">{r.stat}</div>
                     <div className="text-[10px] uppercase tracking-[0.2em] text-muted-foreground">
                       {r.statLabel}
                     </div>
@@ -189,7 +203,7 @@ function HomePage() {
       <section className="container-edge mt-24">
         <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-10">
           <div>
-            <SectionLabel>Realizace</SectionLabel>
+            <SectionLabel>Naše realizace</SectionLabel>
             <h2 className="font-display text-4xl md:text-5xl font-bold uppercase leading-tight max-w-2xl">
               Práce mluví <span className="text-gradient-forge">za nás.</span>
             </h2>
