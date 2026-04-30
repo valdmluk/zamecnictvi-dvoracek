@@ -1,0 +1,107 @@
+import { createFileRoute } from "@tanstack/react-router";
+import { ServicesGrid } from "@/components/ServicesGrid";
+import { SectionLabel } from "@/components/SectionLabel";
+import { CtaBanner } from "@/components/CtaBanner";
+import { Check } from "lucide-react";
+
+export const Route = createFileRoute("/sluzby")({
+  head: () => ({
+    meta: [
+      { title: "Služby — Zakázková kovovýroba | Nýrkov" },
+      {
+        name: "description",
+        content:
+          "Zábradlí, vrata, schodiště, přístřešky a ocelové konstrukce na míru. Návrh, výroba i montáž v Plzeňském kraji.",
+      },
+      { property: "og:title", content: "Služby — Nýrkov kovovýroba" },
+      {
+        property: "og:description",
+        content: "Kompletní kovovýroba na míru pro domácnosti i firmy.",
+      },
+    ],
+  }),
+  component: ServicesPage,
+});
+
+const process = [
+  { step: "01", title: "Konzultace", desc: "Probereme vaši představu, místo a termín. Telefon, e-mail nebo schůzka u vás." },
+  { step: "02", title: "Návrh & cena", desc: "Připravíme technický návrh a pevnou cenovou nabídku. Obvykle do 48 hodin." },
+  { step: "03", title: "Výroba", desc: "Vyrobíme v naší dílně v Nýrsku z kvalitních materiálů s atestem." },
+  { step: "04", title: "Montáž", desc: "Dovezeme a namontujeme. Po sobě uklidíme. Předáme s 5letou zárukou." },
+];
+
+const materials = [
+  "Konstrukční ocel S235, S355",
+  "Nerez AISI 304, 316",
+  "Hliníkové profily",
+  "Žárově zinkováno / KTL / komaxit",
+  "Dřevo (dub, jasan) na schodiště",
+  "Sklo, polykarbonát, plech pro přístřešky",
+];
+
+function ServicesPage() {
+  return (
+    <>
+      <section className="container-edge pt-16 md:pt-24">
+        <SectionLabel>Služby</SectionLabel>
+        <h1 className="font-display text-5xl md:text-7xl font-bold uppercase leading-[0.95] max-w-3xl">
+          Co pro vás <span className="text-gradient-forge">vyrobíme.</span>
+        </h1>
+        <p className="mt-6 max-w-2xl text-lg text-muted-foreground">
+          Od jednoduchého zábradlí po kompletní ocelovou halu. Vše navrženo,
+          vyrobeno a namontováno pod jednou střechou.
+        </p>
+      </section>
+
+      <section className="container-edge mt-12">
+        <ServicesGrid />
+      </section>
+
+      {/* PROCESS */}
+      <section className="container-edge mt-24">
+        <SectionLabel>Jak to probíhá</SectionLabel>
+        <h2 className="font-display text-4xl md:text-5xl font-bold uppercase leading-tight max-w-2xl">
+          Čtyři kroky <span className="text-gradient-forge">k hotovému dílu.</span>
+        </h2>
+        <div className="mt-10 grid gap-px bg-border border border-border md:grid-cols-4">
+          {process.map((p) => (
+            <div key={p.step} className="bg-card p-8">
+              <div className="font-display text-5xl font-bold text-primary/30">{p.step}</div>
+              <h3 className="mt-4 font-display text-xl font-bold uppercase tracking-wide">
+                {p.title}
+              </h3>
+              <p className="mt-2 text-sm text-muted-foreground">{p.desc}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* MATERIALS */}
+      <section className="container-edge mt-24">
+        <div className="grid gap-10 lg:grid-cols-2 border border-border bg-card p-8 md:p-14">
+          <div>
+            <SectionLabel>Materiály</SectionLabel>
+            <h2 className="font-display text-3xl md:text-4xl font-bold uppercase leading-tight">
+              Pracujeme jen s tím, <br />
+              <span className="text-gradient-forge">co vydrží.</span>
+            </h2>
+            <p className="mt-4 text-muted-foreground">
+              Vybíráme materiály podle účelu — ne podle marže. Dlouhá životnost
+              je u kovovýroby všechno.
+            </p>
+          </div>
+          <ul className="grid gap-3 sm:grid-cols-2">
+            {materials.map((m) => (
+              <li key={m} className="flex items-start gap-3 text-sm">
+                <Check className="h-5 w-5 text-primary shrink-0 mt-0.5" />
+                <span>{m}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </section>
+
+      <CtaBanner />
+    </>
+  );
+}
