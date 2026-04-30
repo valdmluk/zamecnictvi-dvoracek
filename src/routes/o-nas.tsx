@@ -42,15 +42,25 @@ function AboutPage() {
             </h1>
             <div className="mt-8 space-y-5 text-muted-foreground leading-relaxed">
               <p>
-                Zámečnictví Dvořáček s.r.o. sídlí v Nýrsku na adrese Dobrovského 768.
-                Zaměřujeme se na zakázkovou kovovýrobu, stavební zámečnictví, výrobu
-                zábradlí, schodišť, bran, vrat, plotů, ocelových konstrukcí a kovových
-                dílů na míru.
+                <span className="text-foreground font-semibold">Zámečnictví Dvořáček</span> je
+                rodinná firma z Nýrska, která se zaměřuje na zakázkovou kovovýrobu
+                a stavební zámečnictví v Plzeňském kraji.
               </p>
               <p>
-                Každou zakázku řešíme individuálně — od konzultace a zaměření přes
-                výrobu až po montáž u zákazníka. Realizujeme zakázky pro domácnosti,
-                stavební firmy i menší provozy po celém Plzeňském kraji a okolí.
+                Vyrábíme zábradlí, schodiště, brány, vrata a ocelové konstrukce na
+                míru — pro rodinné domy, firmy i stavební projekty.
+              </p>
+              <p>
+                Každou zakázku řešíme individuálně. Od prvního návrhu přes výrobu
+                až po montáž u vás. Dbáme na kvalitní materiály, přesné zpracování
+                a férovou domluvu.
+              </p>
+              <p className="text-foreground font-semibold">
+                Pracujeme přímo s vámi — bez prostředníků.
+              </p>
+              <p>
+                Firma působí v Nýrsku od roku 2000 a za tu dobu realizovala
+                stovky zakázek po celém Plzeňském kraji.
               </p>
             </div>
           </div>
