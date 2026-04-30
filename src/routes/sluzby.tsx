@@ -24,10 +24,9 @@ export const Route = createFileRoute("/sluzby")({
 });
 
 const process = [
-  { step: "01", title: "Konzultace", desc: "Probereme vaši představu, místo a termín. Telefon, e-mail nebo schůzka u vás." },
-  { step: "02", title: "Návrh & cena", desc: "Připravíme technický návrh a cenovou nabídku. Obvykle do 48 hodin." },
-  { step: "03", title: "Výroba", desc: "Vyrobíme v naší dílně v Nýrsku z kvalitních materiálů s odpovídající povrchovou úpravou." },
-  { step: "04", title: "Montáž", desc: "Dovezeme a namontujeme podle domluvy. Po sobě uklidíme a předáme dílo." },
+  { step: "01", title: "Návrh & cena", desc: "Připravíme technický návrh a cenovou nabídku. Obvykle do 48 hodin." },
+  { step: "02", title: "Výroba", desc: "Vyrobíme v naší dílně v Nýrsku z kvalitních materiálů s odpovídající povrchovou úpravou." },
+  { step: "03", title: "Montáž", desc: "Dovezeme a namontujeme podle domluvy. Po sobě uklidíme a předáme dílo." },
 ];
 
 const materials = [
@@ -58,9 +57,9 @@ function ServicesPage() {
       <section className="container-edge mt-24">
         <SectionLabel>Jak to probíhá</SectionLabel>
         <h2 className="font-display text-4xl md:text-5xl font-bold uppercase leading-tight max-w-2xl">
-          Čtyři kroky <span className="text-gradient-forge">k hotovému dílu.</span>
+          Tři kroky <span className="text-gradient-forge">k hotovému dílu.</span>
         </h2>
-        <div className="mt-10 grid gap-px bg-border border border-border md:grid-cols-4">
+        <div className="mt-10 grid gap-px bg-border border border-border md:grid-cols-3">
           {process.map((p) => (
             <div key={p.step} className="bg-card p-8">
               <div className="font-display text-5xl font-bold text-primary/30">{p.step}</div>
