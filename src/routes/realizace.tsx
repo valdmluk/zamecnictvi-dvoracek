@@ -29,7 +29,7 @@ function GalleryPage() {
         </h1>
         <p className="mt-6 max-w-2xl text-lg text-muted-foreground">
           Vybrané zakázky — zábradlí, schodiště, brány a ploty, přístřešky
-          a ocelové konstrukce z Plzeňského kraje.
+          a ocelové konstrukce realizované po celém Plzeňském kraji a okolí.
         </p>
       </section>
 

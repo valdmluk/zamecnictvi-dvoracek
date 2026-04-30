@@ -48,8 +48,8 @@ function ServicesPage() {
           Co pro vás <span className="text-gradient-forge">vyrobíme.</span>
         </h1>
         <p className="mt-6 max-w-2xl text-lg text-muted-foreground">
-          Od jednoduchého zábradlí po ocelovou konstrukci. Vše navrženo,
-          vyrobeno a namontováno v Plzeňském kraji.
+          Od jednoduchého zábradlí po ocelovou konstrukci. Navrhneme, vyrobíme
+          a namontujeme u vás — po celém Plzeňském kraji a okolí.
         </p>
       </section>
 

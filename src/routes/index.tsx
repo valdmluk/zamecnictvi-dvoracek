@@ -80,7 +80,7 @@ function HomePage() {
 
             <h1 className="font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold uppercase leading-[1.0]">
               Zámečnictví Dvořáček —{" "}
-              <span className="text-gradient-forge">kovovýroba na míru v Plzeňském kraji.</span>
+              <span className="text-gradient-forge">kovovýroba na míru po celém Plzeňském kraji.</span>
             </h1>
 
             <p className="mt-8 max-w-xl text-lg text-muted-foreground leading-relaxed">
@@ -154,8 +154,8 @@ function HomePage() {
               <span className="text-gradient-forge">Férová cena.</span>
             </h2>
             <p className="mt-6 text-muted-foreground leading-relaxed">
-              Jsme zámečnická a kovovýrobní firma z Nýrska. Děláme zakázkovou výrobu
-              pro domácnosti, firmy i stavební projekty v Plzeňském kraji.
+              Jsme zámečnická a kovovýrobní firma z Nýrska. Realizujeme zakázky
+              pro domácnosti, firmy i stavební projekty po celém Plzeňském kraji a okolí.
             </p>
             <ul className="mt-6 space-y-2 text-sm text-foreground/90">
               {[
