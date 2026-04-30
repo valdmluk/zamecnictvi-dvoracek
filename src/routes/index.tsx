@@ -45,7 +45,7 @@ const reasons = [
 ];
 
 const trustItems = [
-  { label: "Od roku 2006" },
+  { label: "Od roku 2000" },
   { label: "Zakázková kovovýroba" },
   { label: "Cenová nabídka do 48 hodin" },
   { label: "Nýrsko • Plzeňský kraj" },
@@ -74,7 +74,7 @@ function HomePage() {
               <span className="h-2 w-2 bg-primary animate-pulse" />
               <span className="text-xs uppercase tracking-[0.25em] text-muted-foreground">
                 <MapPin className="inline h-3 w-3 mr-1 -mt-0.5" />
-                Nýrsko • Plzeňský kraj • od 2006
+                Nýrsko • Plzeňský kraj • od 2000
               </span>
             </div>
 
