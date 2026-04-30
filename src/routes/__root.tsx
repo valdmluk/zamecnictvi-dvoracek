@@ -34,19 +34,25 @@ export const Route = createRootRoute({
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Zámečnictví Dvořáček — Kovovýroba na míru | Nýrsko, Plzeňsko" },
+      { title: "Zakázková kovovýroba | Nýrsko, Plzeňsko" },
       {
         name: "description",
         content:
-          "Zámečnictví Dvořáček s.r.o. — zakázková kovovýroba a stavební zámečnictví v Nýrsku. Zábradlí, schodiště, brány, vrata, ploty a ocelové konstrukce na míru.",
+          "Zakázková kovovýroba od roku 2000. Zábradlí, vrata, schodiště, přístřešky a ocelové konstrukce na míru. Nýrsko, Plzeňský kraj.",
       },
-      { property: "og:title", content: "Zámečnictví Dvořáček — Kovovýroba na míru" },
+      { property: "og:title", content: "Zakázková kovovýroba | Nýrsko, Plzeňsko" },
       {
         property: "og:description",
-        content: "Zábradlí, schodiště, brány, vrata, ploty a ocelové konstrukce na míru. Nýrsko, Plzeňský kraj.",
+        content: "Ocelové konstrukce, zábradlí, vrata a schodiště na míru. Plzeňský kraj.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: "Zakázková kovovýroba | Nýrsko, Plzeňsko" },
+      { name: "description", content: "Czech Metal Craft provides custom metal fabrication services for homeowners and businesses." },
+      { property: "og:description", content: "Czech Metal Craft provides custom metal fabrication services for homeowners and businesses." },
+      { name: "twitter:description", content: "Czech Metal Craft provides custom metal fabrication services for homeowners and businesses." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/e7cf6116-4e97-4700-8fce-66444aa9cfef/id-preview-b355719e--aad39e12-6c4b-447f-aef9-87046dc5f48c.lovable.app-1777569199652.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/e7cf6116-4e97-4700-8fce-66444aa9cfef/id-preview-b355719e--aad39e12-6c4b-447f-aef9-87046dc5f48c.lovable.app-1777569199652.png" },
     ],
     links: [
       { rel: "stylesheet", href: appCss },
