@@ -24,7 +24,7 @@ export const Route = createFileRoute("/sluzby")({
 });
 
 const process = [
-  { step: "01", title: "Návrh & cena", desc: "Připravíme technický návrh a cenovou nabídku. Obvykle do 48 hodin." },
+  { step: "01", title: "Návrh & cena", desc: "Připravíme technický návrh a cenovou nabídku co nejdříve." },
   { step: "02", title: "Výroba", desc: "Vyrobíme v naší dílně v Nýrsku z kvalitních materiálů s odpovídající povrchovou úpravou." },
   { step: "03", title: "Montáž", desc: "Dovezeme a namontujeme podle domluvy. Po sobě uklidíme a předáme dílo." },
 ];

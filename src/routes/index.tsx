@@ -13,7 +13,7 @@ export const Route = createFileRoute("/")({
       {
         name: "description",
         content:
-          "Zakázková kovovýroba a zámečnictví v Nýrsku. Zábradlí, schodiště, brány, vrata, ploty a ocelové konstrukce na míru. Cenovou nabídku připravíme do 48 hodin.",
+          "Zakázková kovovýroba a zámečnictví v Nýrsku. Zábradlí, schodiště, brány, vrata, ploty a ocelové konstrukce na míru. Na vaši poptávku reagujeme co nejrychleji.",
       },
     ],
   }),
@@ -38,8 +38,8 @@ const reasons = [
   {
     icon: Clock,
     title: "Férová cenová nabídka",
-    desc: "Jasná domluva, konkrétní cena. Cenovou nabídku obvykle připravíme do 48 hodin.",
-    stat: "48h",
+    desc: "Jasná domluva a konkrétní cena. Na vaši poptávku reagujeme co nejrychleji.",
+    stat: "Rychlá",
     statLabel: "cenová nabídka",
   },
 ];
@@ -47,7 +47,7 @@ const reasons = [
 const trustItems = [
   { label: "Od roku 2000" },
   { label: "Zakázková kovovýroba" },
-  { label: "Cenová nabídka do 48 hodin" },
+  { label: "Rychlá cenová nabídka" },
   { label: "Nýrsko • Plzeňský kraj" },
 ];
 
@@ -89,7 +89,7 @@ function HomePage() {
             </p>
 
             <p className="mt-4 text-base font-semibold text-primary">
-              Cenovou nabídku připravíme do 48 hodin.
+              Na vaši poptávku reagujeme co nejrychleji.
             </p>
 
             <div className="mt-10 flex flex-col sm:flex-row gap-4">
