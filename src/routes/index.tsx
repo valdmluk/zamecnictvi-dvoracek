@@ -131,7 +131,7 @@ function HomePage() {
           <div>
             <SectionLabel>Co pro vás vyrobíme</SectionLabel>
             <h2 className="font-display text-4xl md:text-5xl font-bold uppercase leading-tight max-w-2xl">
-              Šest oborů. <span className="text-gradient-forge">Jeden řemeslný standard.</span>
+              Co pro vás <span className="text-gradient-forge">vyrobíme</span>
             </h2>
           </div>
           <Link
