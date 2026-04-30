@@ -31,12 +31,9 @@ const process = [
 ];
 
 const materials = [
-  "Konstrukční ocel S235, S355",
-  "Nerez AISI 304, 316",
-  "Hliníkové profily",
-  "Žárově zinkováno / komaxit / nátěry",
-  "Dřevo na schodiště podle výběru",
-  "Sklo, polykarbonát, plech pro přístřešky",
+  "Konstrukční ocel",
+  "Nerez",
+  "Povrchové úpravy (zinkování, lakování)",
 ];
 
 function ServicesPage() {
