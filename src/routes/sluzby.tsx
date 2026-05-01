@@ -38,6 +38,7 @@ function ServicesPage() {
           {t("services.h1.prefix")} <span className="text-gradient-forge">{t("services.h1.accent")}</span>
         </h1>
         <p className="mt-6 max-w-2xl text-lg text-muted-foreground">{t("services.lead")}</p>
+        <p className="mt-3 max-w-2xl text-sm md:text-base font-semibold text-primary">{t("services.focus")}</p>
       </section>
 
       <section className="container-edge mt-12">
