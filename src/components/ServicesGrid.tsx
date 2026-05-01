@@ -1,5 +1,5 @@
 import { Link } from "@tanstack/react-router";
-import { ArrowUpRight, Fence, DoorOpen, MoveUpRight, Home, Wrench, Construction } from "lucide-react";
+import { ArrowUpRight, Fence, DoorOpen, MoveUpRight, Home, Construction } from "lucide-react";
 import { useLang } from "@/i18n/LanguageProvider";
 import type { TranslationKey } from "@/i18n/translations";
 
@@ -9,7 +9,7 @@ const services: { icon: typeof Fence; titleKey: TranslationKey; descKey: Transla
   { icon: DoorOpen, titleKey: "services.3.title", descKey: "services.3.desc" },
   { icon: Home, titleKey: "services.4.title", descKey: "services.4.desc" },
   { icon: Construction, titleKey: "services.5.title", descKey: "services.5.desc" },
-  { icon: Wrench, titleKey: "services.6.title", descKey: "services.6.desc" },
+  
 ];
 
 export function ServicesGrid() {

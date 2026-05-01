@@ -111,6 +111,9 @@ function HomePage() {
             <h2 className="font-display text-4xl md:text-5xl font-bold uppercase leading-tight max-w-2xl">
               {t("section.services.h2.prefix")} <span className="text-gradient-forge">{t("section.services.h2.accent")}</span>
             </h2>
+            <p className="mt-4 max-w-2xl text-sm md:text-base text-muted-foreground">
+              {t("services.focus")}
+            </p>
           </div>
           <Link
             to="/sluzby"
@@ -165,6 +168,28 @@ function HomePage() {
               );
             })}
           </div>
+        </div>
+      </section>
+
+      {/* TECHNOLOGY / CAPABILITIES */}
+      <section className="container-edge mt-24">
+        <div className="grid gap-10 lg:grid-cols-2 border border-border bg-card p-8 md:p-14">
+          <div>
+            <SectionLabel>{t("tech.label")}</SectionLabel>
+            <h2 className="font-display text-3xl md:text-4xl font-bold uppercase leading-tight">
+              {t("tech.h2.prefix")} <br />
+              <span className="text-gradient-forge">{t("tech.h2.accent")}</span>
+            </h2>
+            <p className="mt-4 text-muted-foreground">{t("tech.lead")}</p>
+          </div>
+          <ul className="grid gap-3">
+            {(["tech.1", "tech.2", "tech.3", "tech.4"] as TranslationKey[]).map((k) => (
+              <li key={k} className="flex items-start gap-3 text-sm md:text-base">
+                <span className="mt-2 h-1.5 w-1.5 bg-primary shrink-0" />
+                <span>{t(k)}</span>
+              </li>
+            ))}
+          </ul>
         </div>
       </section>
 

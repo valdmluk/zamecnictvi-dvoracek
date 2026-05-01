@@ -18,7 +18,7 @@ export const translations = {
       "Zábradlí, schodiště, brány, vrata, ploty, ocelové konstrukce a zakázková kovovýroba. Navrhneme, vyrobíme a namontujeme řešení přesně podle vás.",
     "home.subLead": "Na vaši poptávku reagujeme co nejrychleji.",
     "home.cta.call": "Zavolat a domluvit konzultaci",
-    "home.cta.inquiry": "Nezávazná poptávka",
+    "home.cta.inquiry": "Nezávazná konzultace",
 
     // Trust items
     "trust.since": "Od roku 2000",
@@ -43,10 +43,10 @@ export const translations = {
     "why.point.4": "Jasná domluva a férová cenová nabídka",
     "why.point.5": "Montáž podle domluvy",
 
-    "reason.1.title": "Vlastní výroba v Nýrsku",
-    "reason.1.desc": "Veškerá kovovýroba probíhá v naší dílně v Nýrsku — od návrhu po finální povrchovou úpravu.",
+    "reason.1.title": "Vlastní výrobní zázemí v Nýrsku",
+    "reason.1.desc": "Veškerá kovovýroba probíhá v našich výrobních halách v Nýrsku — od návrhu po finální povrchovou úpravu.",
     "reason.1.stat": "Nýrsko",
-    "reason.1.statLabel": "vlastní dílna",
+    "reason.1.statLabel": "vlastní výrobní zázemí",
     "reason.2.title": "Individuální řešení na míru",
     "reason.2.desc": "Každá zakázka je jiná. Navrhneme řešení podle vašich rozměrů, prostoru a stylu.",
     "reason.2.stat": "100%",
@@ -72,8 +72,18 @@ export const translations = {
     "services.4.desc": "Ocelové konstrukce, přístřešky, rámy a svařované díly na míru.",
     "services.5.title": "Zakázková kovovýroba",
     "services.5.desc": "Zakázková výroba kovových dílů, plechových prvků a svařovaných konstrukcí.",
-    "services.6.title": "Zámečnické opravy",
-    "services.6.desc": "Opravy, úpravy a drobné zámečnické práce podle domluvy.",
+    "services.focus": "Zaměřujeme se na zakázkovou kovovýrobu a větší projekty pro rodinné domy i firmy.",
+
+    // Technology / capabilities
+    "tech.label": "Technologie a vybavení",
+    "tech.h2.prefix": "Technologie",
+    "tech.h2.accent": "a vybavení.",
+    "tech.lead": "Disponujeme vlastním výrobním zázemím a technologiemi pro zpracování kovů.",
+    "tech.1": "Svařování ocelových konstrukcí",
+    "tech.2": "Zpracování konstrukční oceli",
+    "tech.3": "Výroba a kompletace kovových dílů",
+    "tech.4": "Příprava pro povrchové úpravy (zinkování, lakování)",
+    "consult.note": "Každou zakázku řešíme individuálně – nejdříve si s vámi projdeme zadání a možnosti řešení.",
 
     // Services page
     "services.label": "Služby",
@@ -86,7 +96,7 @@ export const translations = {
     "services.process.1.title": "Návrh & cena",
     "services.process.1.desc": "Připravíme technický návrh a cenovou nabídku co nejdříve.",
     "services.process.2.title": "Výroba",
-    "services.process.2.desc": "Vyrobíme v naší dílně v Nýrsku z kvalitních materiálů s odpovídající povrchovou úpravou.",
+    "services.process.2.desc": "Vyrobíme v našich výrobních halách v Nýrsku z kvalitních materiálů s odpovídající povrchovou úpravou.",
     "services.process.3.title": "Montáž",
     "services.process.3.desc": "Dovezeme a namontujeme podle domluvy. Po sobě uklidíme a předáme dílo.",
     "services.materialsLabel": "Materiály",
@@ -176,8 +186,8 @@ export const translations = {
     "cta.h2.prefix": "Cenovou nabídku",
     "cta.h2.accent": "připravíme co nejdříve.",
     "cta.lead": "Ozveme se vám a projdeme váš projekt krok za krokem.",
-    "cta.call": "Zavolat",
-    "cta.send": "Poslat poptávku",
+    "cta.call": "Zavolat a domluvit konzultaci",
+    "cta.send": "Nezávazná konzultace",
 
     // Footer
     "footer.lead": "Zakázková kovovýroba a stavební zámečnictví pro domácnosti, firmy i stavební projekty po celém Plzeňském kraji a okolí. Zábradlí, schodiště, brány, vrata, ploty a ocelové konstrukce na míru.",
@@ -207,7 +217,7 @@ export const translations = {
       "Geländer, Treppen, Tore, Einfahrtstore, Zäune, Stahlkonstruktionen und individueller Metallbau. Wir entwerfen, fertigen und montieren — exakt nach Ihren Wünschen.",
     "home.subLead": "Auf Ihre Anfrage reagieren wir schnellstmöglich.",
     "home.cta.call": "Anrufen und Beratung vereinbaren",
-    "home.cta.inquiry": "Unverbindliche Anfrage",
+    "home.cta.inquiry": "Unverbindliche Beratung",
 
     // Trust items
     "trust.since": "Seit dem Jahr 2000",
@@ -232,10 +242,10 @@ export const translations = {
     "why.point.4": "Klare Absprachen und faire Preise",
     "why.point.5": "Montage nach Vereinbarung",
 
-    "reason.1.title": "Eigene Fertigung in Nýrsko",
-    "reason.1.desc": "Der gesamte Metallbau erfolgt in unserer Werkstatt in Nýrsko — vom Entwurf bis zur finalen Oberflächenbehandlung.",
+    "reason.1.title": "Eigene Fertigungshallen in Nýrsko",
+    "reason.1.desc": "Der gesamte Metallbau erfolgt in unseren Fertigungshallen in Nýrsko — vom Entwurf bis zur finalen Oberflächenbehandlung.",
     "reason.1.stat": "Nýrsko",
-    "reason.1.statLabel": "eigene Werkstatt",
+    "reason.1.statLabel": "eigene Fertigungshallen",
     "reason.2.title": "Individuelle Lösungen nach Maß",
     "reason.2.desc": "Jeder Auftrag ist anders. Wir entwerfen die Lösung passend zu Ihren Maßen, dem Raum und Ihrem Stil.",
     "reason.2.stat": "100 %",
@@ -261,8 +271,18 @@ export const translations = {
     "services.4.desc": "Stahlkonstruktionen, Überdachungen, Rahmen und geschweißte Bauteile nach Maß.",
     "services.5.title": "Individueller Metallbau",
     "services.5.desc": "Maßgefertigte Metallteile, Blechelemente und geschweißte Konstruktionen.",
-    "services.6.title": "Schlosserei-Reparaturen",
-    "services.6.desc": "Reparaturen, Anpassungen und kleinere Schlosserarbeiten nach Vereinbarung.",
+    "services.focus": "Wir konzentrieren uns auf individuellen Metallbau und größere Projekte für Einfamilienhäuser und Firmen.",
+
+    // Technology / capabilities
+    "tech.label": "Technologie und Ausstattung",
+    "tech.h2.prefix": "Technologie",
+    "tech.h2.accent": "und Ausstattung.",
+    "tech.lead": "Wir verfügen über eigene Fertigungshallen und Technologien zur Metallverarbeitung.",
+    "tech.1": "Schweißen von Stahlkonstruktionen",
+    "tech.2": "Verarbeitung von Konstruktionsstahl",
+    "tech.3": "Fertigung und Montage von Metallteilen",
+    "tech.4": "Vorbereitung für Oberflächenbehandlungen (Verzinken, Lackieren)",
+    "consult.note": "Jeden Auftrag bearbeiten wir individuell – zuerst gehen wir mit Ihnen die Aufgabenstellung und mögliche Lösungen durch.",
 
     // Services page
     "services.label": "Leistungen",
@@ -275,7 +295,7 @@ export const translations = {
     "services.process.1.title": "Entwurf & Preis",
     "services.process.1.desc": "Wir erstellen einen technischen Entwurf und ein Angebot schnellstmöglich.",
     "services.process.2.title": "Fertigung",
-    "services.process.2.desc": "Wir fertigen in unserer Werkstatt in Nýrsko aus hochwertigen Materialien mit passender Oberflächenbehandlung.",
+    "services.process.2.desc": "Wir fertigen in unseren Fertigungshallen in Nýrsko aus hochwertigen Materialien mit passender Oberflächenbehandlung.",
     "services.process.3.title": "Montage",
     "services.process.3.desc": "Wir liefern und montieren nach Vereinbarung. Anschließend räumen wir auf und übergeben das fertige Werk.",
     "services.materialsLabel": "Materialien",
@@ -365,8 +385,8 @@ export const translations = {
     "cta.h2.prefix": "Das Angebot erstellen",
     "cta.h2.accent": "wir schnellstmöglich.",
     "cta.lead": "Wir melden uns und gehen Ihr Projekt Schritt für Schritt durch.",
-    "cta.call": "Anrufen",
-    "cta.send": "Anfrage senden",
+    "cta.call": "Anrufen und Beratung vereinbaren",
+    "cta.send": "Unverbindliche Beratung",
 
     // Footer
     "footer.lead": "Individueller Metallbau und Bauschlosserei für Privatkunden, Firmen und Bauprojekte in der gesamten Region Pilsen und Umgebung. Geländer, Treppen, Tore, Einfahrtstore, Zäune und Stahlkonstruktionen nach Maß.",
