@@ -171,6 +171,28 @@ function HomePage() {
         </div>
       </section>
 
+      {/* TECHNOLOGY / CAPABILITIES */}
+      <section className="container-edge mt-24">
+        <div className="grid gap-10 lg:grid-cols-2 border border-border bg-card p-8 md:p-14">
+          <div>
+            <SectionLabel>{t("tech.label")}</SectionLabel>
+            <h2 className="font-display text-3xl md:text-4xl font-bold uppercase leading-tight">
+              {t("tech.h2.prefix")} <br />
+              <span className="text-gradient-forge">{t("tech.h2.accent")}</span>
+            </h2>
+            <p className="mt-4 text-muted-foreground">{t("tech.lead")}</p>
+          </div>
+          <ul className="grid gap-3">
+            {(["tech.1", "tech.2", "tech.3", "tech.4"] as TranslationKey[]).map((k) => (
+              <li key={k} className="flex items-start gap-3 text-sm md:text-base">
+                <span className="mt-2 h-1.5 w-1.5 bg-primary shrink-0" />
+                <span>{t(k)}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </section>
+
       {/* GALLERY */}
       <section className="container-edge mt-24">
         <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-10">
