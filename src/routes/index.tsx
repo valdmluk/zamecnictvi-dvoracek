@@ -111,6 +111,9 @@ function HomePage() {
             <h2 className="font-display text-4xl md:text-5xl font-bold uppercase leading-tight max-w-2xl">
               {t("section.services.h2.prefix")} <span className="text-gradient-forge">{t("section.services.h2.accent")}</span>
             </h2>
+            <p className="mt-4 max-w-2xl text-sm md:text-base text-muted-foreground">
+              {t("services.focus")}
+            </p>
           </div>
           <Link
             to="/sluzby"
