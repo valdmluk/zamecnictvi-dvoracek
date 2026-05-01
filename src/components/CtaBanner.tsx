@@ -21,6 +21,9 @@ export function CtaBanner() {
             <p className="mt-4 text-sm md:text-base text-muted-foreground max-w-xl">
               {t("cta.lead")}
             </p>
+            <p className="mt-3 text-xs md:text-sm text-foreground/80 max-w-xl">
+              {t("consult.note")}
+            </p>
           </div>
           <div className="flex flex-col sm:flex-row gap-3">
             <a
