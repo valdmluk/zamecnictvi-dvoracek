@@ -79,12 +79,6 @@ function HomePage() {
                 <Phone className="h-5 w-5" />
                 {t("home.cta.call")}
               </a>
-              <Link
-                to="/kontakt"
-                className="inline-flex items-center justify-center gap-2 border border-border bg-background/60 backdrop-blur px-8 py-5 text-sm font-bold uppercase tracking-wider hover:border-primary hover:text-primary transition-colors"
-              >
-                {t("home.cta.inquiry")} <ArrowRight className="h-4 w-4" />
-              </Link>
             </div>
 
             <div className="mt-14 grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 border-t border-border pt-8">

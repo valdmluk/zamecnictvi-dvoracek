@@ -1,5 +1,4 @@
-import { Link } from "@tanstack/react-router";
-import { Phone, ArrowRight } from "lucide-react";
+import { Phone } from "lucide-react";
 import { useLang } from "@/i18n/LanguageProvider";
 
 export function CtaBanner() {
@@ -25,19 +24,13 @@ export function CtaBanner() {
               {t("consult.note")}
             </p>
           </div>
-          <div className="flex flex-col sm:flex-row gap-3">
+          <div className="flex">
             <a
               href="tel:+420376570591"
               className="inline-flex items-center justify-center gap-2 bg-primary px-6 py-4 text-sm font-bold uppercase tracking-wider text-primary-foreground"
             >
               <Phone className="h-4 w-4" /> {t("cta.call")}
             </a>
-            <Link
-              to="/kontakt"
-              className="inline-flex items-center justify-center gap-2 border border-border bg-background px-6 py-4 text-sm font-bold uppercase tracking-wider hover:border-primary hover:text-primary transition-colors"
-            >
-              {t("cta.send")} <ArrowRight className="h-4 w-4" />
-            </Link>
           </div>
         </div>
       </div>
