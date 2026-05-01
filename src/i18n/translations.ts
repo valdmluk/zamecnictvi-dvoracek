@@ -18,7 +18,7 @@ export const translations = {
       "Zábradlí, schodiště, brány, vrata, ploty, ocelové konstrukce a zakázková kovovýroba. Navrhneme, vyrobíme a namontujeme řešení přesně podle vás.",
     "home.subLead": "Na vaši poptávku reagujeme co nejrychleji.",
     "home.cta.call": "Zavolat a domluvit konzultaci",
-    "home.cta.inquiry": "Nezávazná poptávka",
+    "home.cta.inquiry": "Nezávazná konzultace",
 
     // Trust items
     "trust.since": "Od roku 2000",
@@ -43,10 +43,10 @@ export const translations = {
     "why.point.4": "Jasná domluva a férová cenová nabídka",
     "why.point.5": "Montáž podle domluvy",
 
-    "reason.1.title": "Vlastní výroba v Nýrsku",
-    "reason.1.desc": "Veškerá kovovýroba probíhá v naší dílně v Nýrsku — od návrhu po finální povrchovou úpravu.",
+    "reason.1.title": "Vlastní výrobní zázemí v Nýrsku",
+    "reason.1.desc": "Veškerá kovovýroba probíhá v našich výrobních halách v Nýrsku — od návrhu po finální povrchovou úpravu.",
     "reason.1.stat": "Nýrsko",
-    "reason.1.statLabel": "vlastní dílna",
+    "reason.1.statLabel": "vlastní výrobní zázemí",
     "reason.2.title": "Individuální řešení na míru",
     "reason.2.desc": "Každá zakázka je jiná. Navrhneme řešení podle vašich rozměrů, prostoru a stylu.",
     "reason.2.stat": "100%",
@@ -72,8 +72,18 @@ export const translations = {
     "services.4.desc": "Ocelové konstrukce, přístřešky, rámy a svařované díly na míru.",
     "services.5.title": "Zakázková kovovýroba",
     "services.5.desc": "Zakázková výroba kovových dílů, plechových prvků a svařovaných konstrukcí.",
-    "services.6.title": "Zámečnické opravy",
-    "services.6.desc": "Opravy, úpravy a drobné zámečnické práce podle domluvy.",
+    "services.focus": "Zaměřujeme se na zakázkovou kovovýrobu a větší projekty pro rodinné domy i firmy.",
+
+    // Technology / capabilities
+    "tech.label": "Technologie a vybavení",
+    "tech.h2.prefix": "Technologie",
+    "tech.h2.accent": "a vybavení.",
+    "tech.lead": "Disponujeme vlastním výrobním zázemím a technologiemi pro zpracování kovů.",
+    "tech.1": "Svařování ocelových konstrukcí",
+    "tech.2": "Zpracování konstrukční oceli",
+    "tech.3": "Výroba a kompletace kovových dílů",
+    "tech.4": "Příprava pro povrchové úpravy (zinkování, lakování)",
+    "consult.note": "Každou zakázku řešíme individuálně – nejdříve si s vámi projdeme zadání a možnosti řešení.",
 
     // Services page
     "services.label": "Služby",
@@ -86,7 +96,7 @@ export const translations = {
     "services.process.1.title": "Návrh & cena",
     "services.process.1.desc": "Připravíme technický návrh a cenovou nabídku co nejdříve.",
     "services.process.2.title": "Výroba",
-    "services.process.2.desc": "Vyrobíme v naší dílně v Nýrsku z kvalitních materiálů s odpovídající povrchovou úpravou.",
+    "services.process.2.desc": "Vyrobíme v našich výrobních halách v Nýrsku z kvalitních materiálů s odpovídající povrchovou úpravou.",
     "services.process.3.title": "Montáž",
     "services.process.3.desc": "Dovezeme a namontujeme podle domluvy. Po sobě uklidíme a předáme dílo.",
     "services.materialsLabel": "Materiály",
@@ -176,8 +186,8 @@ export const translations = {
     "cta.h2.prefix": "Cenovou nabídku",
     "cta.h2.accent": "připravíme co nejdříve.",
     "cta.lead": "Ozveme se vám a projdeme váš projekt krok za krokem.",
-    "cta.call": "Zavolat",
-    "cta.send": "Poslat poptávku",
+    "cta.call": "Zavolat a domluvit konzultaci",
+    "cta.send": "Nezávazná konzultace",
 
     // Footer
     "footer.lead": "Zakázková kovovýroba a stavební zámečnictví pro domácnosti, firmy i stavební projekty po celém Plzeňském kraji a okolí. Zábradlí, schodiště, brány, vrata, ploty a ocelové konstrukce na míru.",
