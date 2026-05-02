@@ -121,6 +121,8 @@ export const translations = {
     "gallery.item.3.tag": "Přístřešek • Nýrsko",
     "gallery.item.4.title": "Ocelová lávka",
     "gallery.item.4.tag": "Ocelová lávka • Švihov",
+    "gallery.item.5.title": "Točité schodiště",
+    "gallery.item.5.tag": "Schodiště • Klatovy",
 
     // About page
     "about.label": "O firmě",
@@ -316,6 +318,8 @@ export const translations = {
     "gallery.item.3.tag": "Überdachung • Nýrsko",
     "gallery.item.4.title": "Stahlsteg",
     "gallery.item.4.tag": "Stahlsteg • Švihov",
+    "gallery.item.5.title": "Wendeltreppe",
+    "gallery.item.5.tag": "Treppe • Klatovy",
 
     // About page
     "about.label": "Über uns",
