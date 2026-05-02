@@ -2,6 +2,7 @@ import railing from "@/assets/work-railing.jpg";
 import gate from "@/assets/work-gate.jpg";
 import canopy from "@/assets/work-canopy.jpg";
 import bridge from "@/assets/work-bridge.jpg";
+import staircase from "@/assets/work-staircase.jpg";
 import { useLang } from "@/i18n/LanguageProvider";
 import type { TranslationKey } from "@/i18n/translations";
 
@@ -10,6 +11,7 @@ const items: { src: string; titleKey: TranslationKey; tagKey: TranslationKey; sp
   { src: gate, titleKey: "gallery.item.2.title", tagKey: "gallery.item.2.tag" },
   { src: canopy, titleKey: "gallery.item.3.title", tagKey: "gallery.item.3.tag" },
   { src: bridge, titleKey: "gallery.item.4.title", tagKey: "gallery.item.4.tag" },
+  { src: staircase, titleKey: "gallery.item.5.title", tagKey: "gallery.item.5.tag" },
 ];
 
 export function Gallery({ limit }: { limit?: number }) {
