@@ -113,7 +113,7 @@ export const translations = {
     "gallery.h1.accent": "v terénu.",
     "gallery.lead": "Vybrané zakázky — zábradlí, schodiště, brány a ploty, přístřešky a ocelové konstrukce realizované po celém Plzeňském kraji a okolí.",
 
-    "gallery.item.1.title": "Zábradlí",
+    "gallery.item.1.title": "Nerezové zábradlí",
     "gallery.item.1.tag": "Zábradlí • Nýrsko",
     "gallery.item.2.title": "Brána a plot",
     "gallery.item.2.tag": "Brána a plot • Plzeňský kraj",
@@ -312,7 +312,7 @@ export const translations = {
     "gallery.h1.accent": "im Einsatz.",
     "gallery.lead": "Ausgewählte Aufträge — Geländer, Treppen, Tore und Zäune, Überdachungen und Stahlkonstruktionen, realisiert in der gesamten Region Pilsen und Umgebung.",
 
-    "gallery.item.1.title": "Geländer",
+    "gallery.item.1.title": "Edelstahlgeländer",
     "gallery.item.1.tag": "Geländer • Nýrsko",
     "gallery.item.2.title": "Tor und Zaun",
     "gallery.item.2.tag": "Tor und Zaun • Region Pilsen",
