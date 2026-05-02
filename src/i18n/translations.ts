@@ -115,8 +115,8 @@ export const translations = {
 
     "gallery.item.1.title": "Nerezové zábradlí",
     "gallery.item.1.tag": "Zábradlí • Nýrsko",
-    "gallery.item.2.title": "Brána a plot",
-    "gallery.item.2.tag": "Brána a plot • Plzeňský kraj",
+    "gallery.item.2.title": "Brána s otočným pohonem",
+    "gallery.item.2.tag": "Brána • Klatovy",
     "gallery.item.3.title": "Schodiště",
     "gallery.item.3.tag": "Schodiště • rodinný dům",
     "gallery.item.4.title": "Přístřešek",
@@ -314,8 +314,8 @@ export const translations = {
 
     "gallery.item.1.title": "Edelstahlgeländer",
     "gallery.item.1.tag": "Geländer • Nýrsko",
-    "gallery.item.2.title": "Tor und Zaun",
-    "gallery.item.2.tag": "Tor und Zaun • Region Pilsen",
+    "gallery.item.2.title": "Tor mit Drehantrieb",
+    "gallery.item.2.tag": "Tor • Klatovy",
     "gallery.item.3.title": "Treppe",
     "gallery.item.3.tag": "Treppe • Einfamilienhaus",
     "gallery.item.4.title": "Überdachung",
