@@ -3,6 +3,7 @@ import { Phone, Menu, X } from "lucide-react";
 import { useState } from "react";
 import { useLang } from "@/i18n/LanguageProvider";
 import { LanguageSwitcher } from "@/components/LanguageSwitcher";
+import { CallCtaButton } from "@/components/CallCtaButton";
 import type { TranslationKey } from "@/i18n/translations";
 
 const nav: { to: string; key: TranslationKey }[] = [
