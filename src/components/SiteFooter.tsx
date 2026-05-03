@@ -96,7 +96,7 @@ export function SiteFooter() {
 
       <div className="border-t border-border">
         <div className="container-edge py-5 flex flex-col md:flex-row items-center justify-between gap-2 text-xs text-muted-foreground">
-          <div>© {new Date().getFullYear()} Zámečnictví Dvořáček s.r.o. · {t("footer.rights")}</div>
+          <div>© {new Date().getFullYear()} {t("brand.legal")} · {t("footer.rights")}</div>
           <div className="uppercase tracking-[0.2em]">{t("footer.tagline")}</div>
         </div>
       </div>
