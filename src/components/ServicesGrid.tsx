@@ -15,7 +15,7 @@ const services: { icon: typeof Fence; titleKey: TranslationKey; descKey: Transla
 export function ServicesGrid() {
   const { t } = useLang();
   return (
-    <div className="grid gap-px bg-border md:grid-cols-2 lg:grid-cols-3 border border-border">
+    <div className="grid gap-px bg-border md:grid-cols-2 lg:grid-cols-3 border border-border [&>*:last-child]:md:col-span-2 [&>*:last-child]:lg:col-span-1 [&>*:nth-last-child(2)]:lg:col-span-2">
       {services.map((s) => {
         const Icon = s.icon;
         return (
