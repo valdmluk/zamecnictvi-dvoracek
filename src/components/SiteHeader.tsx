@@ -18,7 +18,10 @@ export function SiteHeader() {
   const { t } = useLang();
 
   return (
-    <header className="sticky top-0 z-50 border-b border-border/60 bg-background/85 backdrop-blur-md">
+    <header
+      className="sticky top-0 z-50 border-b border-border/60 bg-background/85 backdrop-blur-md"
+      style={{ paddingTop: "env(safe-area-inset-top)" }}
+    >
       <div className="container-edge flex h-16 items-center justify-between md:h-20">
         <Link to="/" className="flex items-center gap-3 group">
           <div className="relative flex h-10 w-10 items-center justify-center bg-primary text-primary-foreground font-display text-xl font-bold">
