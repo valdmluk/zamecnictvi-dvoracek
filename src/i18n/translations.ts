@@ -189,6 +189,13 @@ export const translations = {
     "cta.call": "Zavolat a domluvit konzultaci",
     "cta.send": "Nezávazná konzultace",
 
+    // Call modal
+    "modal.eyebrow": "Kontakt",
+    "modal.title": "Zavolejte nám",
+    "modal.text": "Nebo nám napište a ozveme se vám zpět.",
+    "modal.submitCta": "Odeslat poptávku",
+    "modal.close": "Zavřít",
+
     // Footer
     "footer.lead": "Zakázková kovovýroba a stavební zámečnictví pro domácnosti, firmy i stavební projekty po celém Plzeňském kraji a okolí. Zábradlí, schodiště, brány, vrata, ploty a ocelové konstrukce na míru.",
     "footer.nav": "Navigace",
