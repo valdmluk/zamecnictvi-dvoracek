@@ -323,7 +323,7 @@ export const translations = {
 
     // About page
     "about.label": "Über uns",
-    "about.h1.prefix": "Schlosserei",
+    "about.h1.prefix": "Metallbau",
     "about.h1.accent": "Dvořáček s.r.o.",
     "about.p1.bold": "Schlosserei Dvořáček",
     "about.p1.rest": "ist ein Familienbetrieb aus Nýrsko, der sich auf individuellen Metallbau und Bauschlosserei in der Region Pilsen spezialisiert.",
