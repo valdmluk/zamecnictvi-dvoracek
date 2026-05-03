@@ -18,7 +18,7 @@ export function SiteFooter() {
             </div>
             <div>
               <div className="font-display text-lg font-bold uppercase tracking-wide">
-                Zámečnictví Dvořáček
+                {t("brand.name")}
               </div>
               <div className="text-[10px] uppercase tracking-[0.2em] text-muted-foreground">
                 {t("header.tagline")}
@@ -27,7 +27,7 @@ export function SiteFooter() {
           </div>
           <p className="mt-4 max-w-md text-sm text-muted-foreground">{t("footer.lead")}</p>
           <div className="mt-5 text-xs text-muted-foreground space-y-1">
-            <div>Zámečnictví Dvořáček s.r.o.</div>
+            <div>{t("brand.legal")}</div>
             <div>IČ: 27970035 · DIČ: CZ27970035</div>
           </div>
         </div>
