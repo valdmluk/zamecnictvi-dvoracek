@@ -395,6 +395,13 @@ export const translations = {
     "cta.call": "Anrufen und Beratung vereinbaren",
     "cta.send": "Unverbindliche Beratung",
 
+    // Call modal
+    "modal.eyebrow": "Kontakt",
+    "modal.title": "Rufen Sie uns an",
+    "modal.text": "Oder schreiben Sie uns und wir melden uns zurück.",
+    "modal.submitCta": "Anfrage senden",
+    "modal.close": "Schließen",
+
     // Footer
     "footer.lead": "Individueller Metallbau und Bauschlosserei für Privatkunden, Firmen und Bauprojekte in der gesamten Region Pilsen und Umgebung. Geländer, Treppen, Tore, Einfahrtstore, Zäune und Stahlkonstruktionen nach Maß.",
     "footer.nav": "Navigation",
