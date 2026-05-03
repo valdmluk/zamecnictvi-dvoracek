@@ -33,8 +33,8 @@ export const translations = {
     "section.allServices": "Všechny služby",
 
     "section.whyLabel": "Proč Zámečnictví Dvořáček",
-    "section.why.h2.prefix": "Jasná domluva.",
-    "section.why.h2.accent": "Férová cena.",
+    "section.why.h2.prefix": "Domluva. Návrh.",
+    "section.why.h2.accent": "Realizace.",
     "section.why.lead":
       "Jsme zámečnická a kovovýrobní firma z Nýrska. Realizujeme zakázky pro domácnosti, firmy i stavební projekty po celém Plzeňském kraji a okolí.",
     "why.point.1": "Vlastní výroba v Nýrsku",
@@ -57,8 +57,8 @@ export const translations = {
     "reason.3.statLabel": "cenová nabídka",
 
     "section.galleryLabel": "Naše realizace",
-    "section.gallery.h2.prefix": "Práce mluví",
-    "section.gallery.h2.accent": "za nás.",
+    "section.gallery.h2.prefix": "Naše",
+    "section.gallery.h2.accent": "realizace.",
     "section.fullGallery": "Celá galerie",
 
     // Services grid
@@ -323,7 +323,7 @@ export const translations = {
 
     // About page
     "about.label": "Über uns",
-    "about.h1.prefix": "Schlosserei",
+    "about.h1.prefix": "Metallbau",
     "about.h1.accent": "Dvořáček s.r.o.",
     "about.p1.bold": "Schlosserei Dvořáček",
     "about.p1.rest": "ist ein Familienbetrieb aus Nýrsko, der sich auf individuellen Metallbau und Bauschlosserei in der Region Pilsen spezialisiert.",
