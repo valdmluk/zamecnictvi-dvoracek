@@ -30,7 +30,7 @@ export function SiteHeader() {
           </div>
           <div className="leading-none">
             <div className="font-display text-base md:text-lg font-bold tracking-wide uppercase">
-              Zámečnictví Dvořáček
+              {t("brand.name")}
             </div>
             <div className="text-[10px] uppercase tracking-[0.2em] text-muted-foreground mt-1">
               {t("header.tagline")}
