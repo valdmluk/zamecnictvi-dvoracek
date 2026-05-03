@@ -49,7 +49,7 @@ function HomePage() {
           <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent" />
         </div>
 
-        <div className="relative container-edge pt-20 pb-28 md:pt-32 md:pb-44">
+        <div className="relative container-edge pt-12 pb-28 md:pt-32 md:pb-44">
           <div className="max-w-3xl">
             <div className="inline-flex items-center gap-2 border border-border bg-background/60 backdrop-blur px-4 py-2 mb-8">
               <span className="h-2 w-2 bg-primary animate-pulse" />
