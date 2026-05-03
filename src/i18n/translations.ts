@@ -9,6 +9,8 @@ export const translations = {
     "nav.about": "O firmě",
     "nav.contact": "Kontakt",
     "header.tagline": "Kovovýroba • Zámečnictví • Nýrsko",
+    "brand.name": "Zámečnictví Dvořáček",
+    "brand.legal": "Zámečnictví Dvořáček s.r.o.",
 
     // Home — hero
     "home.badge": "Nýrsko • Plzeňský kraj • od 2000",
