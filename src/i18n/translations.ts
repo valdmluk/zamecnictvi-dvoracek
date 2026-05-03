@@ -205,11 +205,11 @@ export const translations = {
     "nav.gallery": "Referenzen",
     "nav.about": "Über uns",
     "nav.contact": "Kontakt",
-    "header.tagline": "Metallbau • Schlosserei • Nýrsko",
+    "header.tagline": "Metallbau • Nýrsko",
 
     // Home — hero
     "home.badge": "Nýrsko • Region Pilsen • seit 2000",
-    "home.h1.prefix": "Schlosserei Dvořáček —",
+    "home.h1.prefix": "Metallbau Dvořáček —",
     "home.h1.accent": "Metallbau nach Maß in der gesamten Region Pilsen.",
     "home.lead":
       "Geländer, Treppen, Tore, Einfahrtstore, Zäune, Stahlkonstruktionen und individueller Metallbau. Wir entwerfen, fertigen und montieren — exakt nach Ihren Wünschen.",
@@ -229,11 +229,11 @@ export const translations = {
     "section.services.h2.accent": "fertigen",
     "section.allServices": "Alle Leistungen",
 
-    "section.whyLabel": "Warum Schlosserei Dvořáček",
+    "section.whyLabel": "Warum Metallbau Dvořáček",
     "section.why.h2.prefix": "Klare Absprache.",
     "section.why.h2.accent": "Faire Preise.",
     "section.why.lead":
-      "Wir sind ein Schlosserei- und Metallbaubetrieb aus Nýrsko. Wir realisieren Aufträge für Privatkunden, Firmen und Bauprojekte in der gesamten Region Pilsen und Umgebung.",
+      "Wir sind ein Metallbaubetrieb aus Nýrsko. Wir realisieren Aufträge für Privatkunden, Firmen und Bauprojekte in der gesamten Region Pilsen und Umgebung.",
     "why.point.1": "Eigene Fertigung in Nýrsko",
     "why.point.2": "Individuelle Lösungen nach Maß",
     "why.point.3": "Hochwertige Materialien und Oberflächenbehandlungen",
@@ -325,7 +325,7 @@ export const translations = {
     "about.label": "Über uns",
     "about.h1.prefix": "Metallbau",
     "about.h1.accent": "Dvořáček s.r.o.",
-    "about.p1.bold": "Schlosserei Dvořáček",
+    "about.p1.bold": "Metallbau Dvořáček",
     "about.p1.rest": "ist ein Familienbetrieb aus Nýrsko, der sich auf individuellen Metallbau und Bauschlosserei in der Region Pilsen spezialisiert.",
     "about.p2": "Wir fertigen Geländer, Treppen, Tore, Einfahrtstore und Stahlkonstruktionen nach Maß — für Einfamilienhäuser, Firmen und Bauprojekte.",
     "about.p3": "Jeden Auftrag bearbeiten wir individuell. Vom ersten Entwurf über die Fertigung bis zur Montage bei Ihnen. Wir achten auf hochwertige Materialien, präzise Verarbeitung und faire Absprache.",
