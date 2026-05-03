@@ -208,6 +208,8 @@ export const translations = {
     "nav.about": "Über uns",
     "nav.contact": "Kontakt",
     "header.tagline": "Metallbau • Nyrsko",
+    "brand.name": "Metallbau Dvoracek",
+    "brand.legal": "Metallbau Dvoracek s.r.o.",
 
     // Home — hero
     "home.badge": "Nyrsko • Region Pilsen • seit 2000",
