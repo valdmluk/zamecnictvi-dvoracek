@@ -103,6 +103,8 @@
   h1, h2, h3, h4, .font-display {
     font-family: var(--font-display);
     letter-spacing: -0.01em;
+    /* Extra room for Czech diacritics (ř, č, á, ž …) so lines don't visually collide */
+    line-height: 1.15;
   }
 }
 
