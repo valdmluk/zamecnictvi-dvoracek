@@ -3,6 +3,7 @@ import { Phone, Menu, X } from "lucide-react";
 import { useState } from "react";
 import { useLang } from "@/i18n/LanguageProvider";
 import { LanguageSwitcher } from "@/components/LanguageSwitcher";
+import { CallCtaButton } from "@/components/CallCtaButton";
 import type { TranslationKey } from "@/i18n/translations";
 
 const nav: { to: string; key: TranslationKey }[] = [
@@ -18,7 +19,10 @@ export function SiteHeader() {
   const { t } = useLang();
 
   return (
-    <header className="sticky top-0 z-50 border-b border-border/60 bg-background/85 backdrop-blur-md">
+    <header
+      className="sticky top-0 z-50 border-b border-border/60 bg-background/85 backdrop-blur-md"
+      style={{ paddingTop: "env(safe-area-inset-top)" }}
+    >
       <div className="container-edge flex h-16 items-center justify-between md:h-20">
         <Link to="/" className="flex items-center gap-3 group">
           <div className="relative flex h-10 w-10 items-center justify-center bg-primary text-primary-foreground font-display text-xl font-bold">
@@ -27,7 +31,7 @@ export function SiteHeader() {
           </div>
           <div className="leading-none">
             <div className="font-display text-base md:text-lg font-bold tracking-wide uppercase">
-              Zámečnictví Dvořáček
+              {t("brand.name")}
             </div>
             <div className="text-[10px] uppercase tracking-[0.2em] text-muted-foreground mt-1">
               {t("header.tagline")}
@@ -51,13 +55,12 @@ export function SiteHeader() {
 
         <div className="flex items-center gap-3">
           <LanguageSwitcher />
-          <a
-            href="tel:+420376570591"
+          <CallCtaButton
             className="hidden md:inline-flex items-center gap-2 bg-primary px-5 py-2.5 text-sm font-bold uppercase tracking-wider text-primary-foreground transition-transform hover:-translate-y-0.5"
           >
             <Phone className="h-4 w-4" />
             376 570 591
-          </a>
+          </CallCtaButton>
           <button
             type="button"
             aria-label="Menu"

@@ -1,5 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { Phone, ArrowRight, ShieldCheck, Hammer, Clock, MapPin } from "lucide-react";
+import { ArrowRight, ShieldCheck, Hammer, Clock, MapPin, Phone } from "lucide-react";
+import { CallCtaButton } from "@/components/CallCtaButton";
 import heroImg from "@/assets/hero-welder.jpg";
 import { ServicesGrid } from "@/components/ServicesGrid";
 import { Gallery } from "@/components/Gallery";
@@ -71,14 +72,12 @@ function HomePage() {
             <p className="mt-4 text-base font-semibold text-primary">{t("home.subLead")}</p>
 
             <div className="mt-10 flex flex-col sm:flex-row gap-4">
-              <a
-                href="tel:+420376570591"
+              <CallCtaButton
                 className="inline-flex items-center justify-center gap-3 bg-primary px-8 py-5 text-sm font-bold uppercase tracking-wider text-primary-foreground transition-transform hover:-translate-y-1"
-                style={{ boxShadow: "var(--shadow-forge)" }}
               >
                 <Phone className="h-5 w-5" />
                 {t("home.cta.call")}
-              </a>
+              </CallCtaButton>
             </div>
 
             <div className="mt-14 grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 border-t border-border pt-8">

@@ -9,6 +9,8 @@ export const translations = {
     "nav.about": "O firmě",
     "nav.contact": "Kontakt",
     "header.tagline": "Kovovýroba • Zámečnictví • Nýrsko",
+    "brand.name": "Zámečnictví Dvořáček",
+    "brand.legal": "Zámečnictví Dvořáček s.r.o.",
 
     // Home — hero
     "home.badge": "Nýrsko • Plzeňský kraj • od 2000",
@@ -187,6 +189,13 @@ export const translations = {
     "cta.call": "Zavolat a domluvit konzultaci",
     "cta.send": "Nezávazná konzultace",
 
+    // Call modal
+    "modal.eyebrow": "Kontakt",
+    "modal.title": "Zavolejte nám",
+    "modal.text": "Nebo nám napište a ozveme se vám zpět.",
+    "modal.submitCta": "Odeslat poptávku",
+    "modal.close": "Zavřít",
+
     // Footer
     "footer.lead": "Zakázková kovovýroba a stavební zámečnictví pro domácnosti, firmy i stavební projekty po celém Plzeňském kraji a okolí. Zábradlí, schodiště, brány, vrata, ploty a ocelové konstrukce na míru.",
     "footer.nav": "Navigace",
@@ -205,11 +214,13 @@ export const translations = {
     "nav.gallery": "Referenzen",
     "nav.about": "Über uns",
     "nav.contact": "Kontakt",
-    "header.tagline": "Metallbau • Nýrsko",
+    "header.tagline": "Metallbau • Nyrsko",
+    "brand.name": "Metallbau Dvoracek",
+    "brand.legal": "Metallbau Dvoracek s.r.o.",
 
     // Home — hero
-    "home.badge": "Nýrsko • Region Pilsen • seit 2000",
-    "home.h1.prefix": "Metallbau Dvořáček —",
+    "home.badge": "Nyrsko • Region Pilsen • seit 2000",
+    "home.h1.prefix": "Metallbau Dvoracek —",
     "home.h1.accent": "Metallbau nach Maß in der gesamten Region Pilsen.",
     "home.lead":
       "Geländer, Treppen, Tore, Einfahrtstore, Zäune, Stahlkonstruktionen und individueller Metallbau. Wir entwerfen, fertigen und montieren — exakt nach Ihren Wünschen.",
@@ -221,7 +232,7 @@ export const translations = {
     "trust.since": "Seit dem Jahr 2000",
     "trust.custom": "Individueller Metallbau",
     "trust.fastQuote": "Schnelles Angebot",
-    "trust.region": "Nýrsko • Region Pilsen",
+    "trust.region": "Nyrsko • Region Pilsen",
 
     // Sections
     "section.servicesLabel": "Was wir für Sie fertigen",
@@ -229,20 +240,20 @@ export const translations = {
     "section.services.h2.accent": "fertigen",
     "section.allServices": "Alle Leistungen",
 
-    "section.whyLabel": "Warum Metallbau Dvořáček",
+    "section.whyLabel": "Warum Metallbau Dvoracek",
     "section.why.h2.prefix": "Klare Absprache.",
     "section.why.h2.accent": "Faire Preise.",
     "section.why.lead":
-      "Wir sind ein Metallbaubetrieb aus Nýrsko. Wir realisieren Aufträge für Privatkunden, Firmen und Bauprojekte in der gesamten Region Pilsen und Umgebung.",
-    "why.point.1": "Eigene Fertigung in Nýrsko",
+      "Wir sind ein Metallbaubetrieb aus Nyrsko. Wir realisieren Aufträge für Privatkunden, Firmen und Bauprojekte in der gesamten Region Pilsen und Umgebung.",
+    "why.point.1": "Eigene Fertigung in Nyrsko",
     "why.point.2": "Individuelle Lösungen nach Maß",
     "why.point.3": "Hochwertige Materialien und Oberflächenbehandlungen",
     "why.point.4": "Klare Absprachen und faire Preise",
     "why.point.5": "Montage nach Vereinbarung",
 
-    "reason.1.title": "Eigene Fertigungshallen in Nýrsko",
-    "reason.1.desc": "Der gesamte Metallbau erfolgt in unseren Fertigungshallen in Nýrsko — vom Entwurf bis zur finalen Oberflächenbehandlung.",
-    "reason.1.stat": "Nýrsko",
+    "reason.1.title": "Eigene Fertigungshallen in Nyrsko",
+    "reason.1.desc": "Der gesamte Metallbau erfolgt in unseren Fertigungshallen in Nyrsko — vom Entwurf bis zur finalen Oberflächenbehandlung.",
+    "reason.1.stat": "Nyrsko",
     "reason.1.statLabel": "eigene Fertigungshallen",
     "reason.2.title": "Individuelle Lösungen nach Maß",
     "reason.2.desc": "Jeder Auftrag ist anders. Wir entwerfen die Lösung passend zu Ihren Maßen, dem Raum und Ihrem Stil.",
@@ -293,7 +304,7 @@ export const translations = {
     "services.process.1.title": "Entwurf & Preis",
     "services.process.1.desc": "Wir erstellen einen technischen Entwurf und ein Angebot schnellstmöglich.",
     "services.process.2.title": "Fertigung",
-    "services.process.2.desc": "Wir fertigen in unseren Fertigungshallen in Nýrsko aus hochwertigen Materialien mit passender Oberflächenbehandlung.",
+    "services.process.2.desc": "Wir fertigen in unseren Fertigungshallen in Nyrsko aus hochwertigen Materialien mit passender Oberflächenbehandlung.",
     "services.process.3.title": "Montage",
     "services.process.3.desc": "Wir liefern und montieren nach Vereinbarung. Anschließend räumen wir auf und übergeben das fertige Werk.",
     "services.materialsLabel": "Materialien",
@@ -311,30 +322,30 @@ export const translations = {
     "gallery.lead": "Ausgewählte Aufträge — Geländer, Treppen, Tore und Zäune, Überdachungen und Stahlkonstruktionen, realisiert in der gesamten Region Pilsen und Umgebung.",
 
     "gallery.item.1.title": "Edelstahlgeländer",
-    "gallery.item.1.tag": "Geländer • Nýrsko",
+    "gallery.item.1.tag": "Geländer • Nyrsko",
     "gallery.item.2.title": "Tor mit Drehantrieb",
     "gallery.item.2.tag": "Tor • Klatovy",
     "gallery.item.3.title": "Überdachung",
-    "gallery.item.3.tag": "Überdachung • Nýrsko",
+    "gallery.item.3.tag": "Überdachung • Nyrsko",
     "gallery.item.4.title": "Stahlsteg",
-    "gallery.item.4.tag": "Stahlsteg • Švihov",
+    "gallery.item.4.tag": "Stahlsteg • Svihov",
     "gallery.item.5.title": "Wendeltreppe",
     "gallery.item.5.tag": "Treppe • Klatovy",
 
     // About page
     "about.label": "Über uns",
     "about.h1.prefix": "Metallbau",
-    "about.h1.accent": "Dvořáček s.r.o.",
-    "about.p1.bold": "Metallbau Dvořáček",
-    "about.p1.rest": "ist ein Familienbetrieb aus Nýrsko, der sich auf individuellen Metallbau und Bauschlosserei in der Region Pilsen spezialisiert.",
+    "about.h1.accent": "Dvoracek s.r.o.",
+    "about.p1.bold": "Metallbau Dvoracek",
+    "about.p1.rest": "ist ein Familienbetrieb aus Nyrsko, der sich auf individuellen Metallbau und Bauschlosserei in der Region Pilsen spezialisiert.",
     "about.p2": "Wir fertigen Geländer, Treppen, Tore, Einfahrtstore und Stahlkonstruktionen nach Maß — für Einfamilienhäuser, Firmen und Bauprojekte.",
     "about.p3": "Jeden Auftrag bearbeiten wir individuell. Vom ersten Entwurf über die Fertigung bis zur Montage bei Ihnen. Wir achten auf hochwertige Materialien, präzise Verarbeitung und faire Absprache.",
     "about.p4": "Wir arbeiten direkt mit Ihnen — ohne Zwischenhändler.",
-    "about.p5": "Das Unternehmen ist seit dem Jahr 2000 in Nýrsko tätig und hat in dieser Zeit Hunderte von Aufträgen in der gesamten Region Pilsen realisiert.",
+    "about.p5": "Das Unternehmen ist seit dem Jahr 2000 in Nyrsko tätig und hat in dieser Zeit Hunderte von Aufträgen in der gesamten Region Pilsen realisiert.",
     "about.facts.title": "Firmendaten",
     "about.facts.seat": "Sitz",
     "about.facts.address": "Adresse",
-    "about.facts.region": "340 22 Nýrsko · Region Pilsen",
+    "about.facts.region": "340 22 Nyrsko · Region Pilsen",
     "about.values.label": "Wie wir arbeiten",
     "about.values.h2.prefix": "Drei Dinge, auf denen",
     "about.values.h2.accent": "wir stehen.",
@@ -383,6 +394,13 @@ export const translations = {
     "cta.lead": "Wir melden uns und gehen Ihr Projekt Schritt für Schritt durch.",
     "cta.call": "Anrufen und Beratung vereinbaren",
     "cta.send": "Unverbindliche Beratung",
+
+    // Call modal
+    "modal.eyebrow": "Kontakt",
+    "modal.title": "Rufen Sie uns an",
+    "modal.text": "Oder schreiben Sie uns und wir melden uns zurück.",
+    "modal.submitCta": "Anfrage senden",
+    "modal.close": "Schließen",
 
     // Footer
     "footer.lead": "Individueller Metallbau und Bauschlosserei für Privatkunden, Firmen und Bauprojekte in der gesamten Region Pilsen und Umgebung. Geländer, Treppen, Tore, Einfahrtstore, Zäune und Stahlkonstruktionen nach Maß.",
