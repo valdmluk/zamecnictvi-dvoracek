@@ -55,13 +55,12 @@ export function SiteHeader() {
 
         <div className="flex items-center gap-3">
           <LanguageSwitcher />
-          <a
-            href="tel:+420376570591"
+          <CallCtaButton
             className="hidden md:inline-flex items-center gap-2 bg-primary px-5 py-2.5 text-sm font-bold uppercase tracking-wider text-primary-foreground transition-transform hover:-translate-y-0.5"
           >
             <Phone className="h-4 w-4" />
             376 570 591
-          </a>
+          </CallCtaButton>
           <button
             type="button"
             aria-label="Menu"
