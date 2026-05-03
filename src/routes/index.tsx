@@ -1,5 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { Phone, ArrowRight, ShieldCheck, Hammer, Clock, MapPin } from "lucide-react";
+import { ArrowRight, ShieldCheck, Hammer, Clock, MapPin, Phone } from "lucide-react";
+import { CallCtaButton } from "@/components/CallCtaButton";
 import heroImg from "@/assets/hero-welder.jpg";
 import { ServicesGrid } from "@/components/ServicesGrid";
 import { Gallery } from "@/components/Gallery";
