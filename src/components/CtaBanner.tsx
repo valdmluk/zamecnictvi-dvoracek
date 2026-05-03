@@ -1,6 +1,5 @@
 import { Phone } from "lucide-react";
 import { useLang } from "@/i18n/LanguageProvider";
-import { CallCtaButton } from "@/components/CallCtaButton";
 
 export function CtaBanner() {
   const { t } = useLang();
@@ -26,11 +25,12 @@ export function CtaBanner() {
             </p>
           </div>
           <div className="flex">
-            <CallCtaButton
+            <a
+              href="tel:+420376570591"
               className="inline-flex items-center justify-center gap-2 bg-primary px-6 py-4 text-sm font-bold uppercase tracking-wider text-primary-foreground"
             >
               <Phone className="h-4 w-4" /> {t("cta.call")}
-            </CallCtaButton>
+            </a>
           </div>
         </div>
       </div>
