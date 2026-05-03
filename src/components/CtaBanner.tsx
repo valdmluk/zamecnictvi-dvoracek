@@ -1,5 +1,6 @@
 import { Phone } from "lucide-react";
 import { useLang } from "@/i18n/LanguageProvider";
+import { CallCtaButton } from "@/components/CallCtaButton";
 
 export function CtaBanner() {
   const { t } = useLang();
