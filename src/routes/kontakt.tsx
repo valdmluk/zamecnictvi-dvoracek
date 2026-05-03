@@ -137,7 +137,7 @@ function ContactPage() {
           </div>
         </div>
 
-        <div className="border border-border bg-card p-6 md:p-10">
+        <div id="kontakt-form" className="border border-border bg-card p-6 md:p-10 scroll-mt-24">
           <h2 className="font-display text-2xl md:text-3xl font-bold uppercase tracking-wide mb-2">
             {t("contact.form.title")}
           </h2>
