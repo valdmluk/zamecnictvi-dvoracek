@@ -101,7 +101,6 @@ function HomePage() {
       <section className="container-edge mt-24">
         <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-10">
           <div>
-            <SectionLabel>{t("section.servicesLabel")}</SectionLabel>
             <h2 className="font-display text-4xl md:text-5xl font-bold uppercase leading-tight max-w-2xl">
               {t("section.services.h2.prefix")} <span className="text-gradient-forge">{t("section.services.h2.accent")}</span>
             </h2>
@@ -191,7 +190,6 @@ function HomePage() {
       <section className="container-edge mt-24">
         <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-10">
           <div>
-            <SectionLabel>{t("section.galleryLabel")}</SectionLabel>
             <h2 className="font-display text-4xl md:text-5xl font-bold uppercase leading-tight max-w-2xl">
               {t("section.gallery.h2.prefix")} <span className="text-gradient-forge">{t("section.gallery.h2.accent")}</span>
             </h2>
