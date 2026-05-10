@@ -18,7 +18,10 @@ export function SiteHeader() {
   const { t } = useLang();
 
   return (
-    <header className="sticky top-0 z-50 border-b border-border/60 bg-background/85 backdrop-blur-md">
+    <header
+      className="sticky top-0 z-50 border-b border-border/60 bg-background/85 backdrop-blur-md"
+      style={{ paddingTop: "max(env(safe-area-inset-top), 16px)" }}
+    >
       <div className="container-edge flex h-16 items-center justify-between md:h-20">
         <Link to="/" className="flex items-center gap-3 group">
           <div className="relative flex h-10 w-10 items-center justify-center bg-primary text-primary-foreground font-display text-xl font-bold">
@@ -52,11 +55,11 @@ export function SiteHeader() {
         <div className="flex items-center gap-3">
           <LanguageSwitcher />
           <a
-            href="tel:+420376570591"
+            href="tel:+420777749438"
             className="hidden md:inline-flex items-center gap-2 bg-primary px-5 py-2.5 text-sm font-bold uppercase tracking-wider text-primary-foreground transition-transform hover:-translate-y-0.5"
           >
             <Phone className="h-4 w-4" />
-            376 570 591
+            777 749 438
           </a>
           <button
             type="button"
@@ -85,10 +88,10 @@ export function SiteHeader() {
               </Link>
             ))}
             <a
-              href="tel:+420376570591"
+              href="tel:+420777749438"
               className="mt-3 inline-flex items-center justify-center gap-2 bg-primary px-5 py-3 text-sm font-bold uppercase tracking-wider text-primary-foreground"
             >
-              <Phone className="h-4 w-4" /> 376 570 591
+              <Phone className="h-4 w-4" /> 777 749 438
             </a>
           </div>
         </div>
