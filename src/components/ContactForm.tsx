@@ -29,6 +29,13 @@ export function ContactForm() {
       return;
     }
     setSubmitting(true);
+    const { name, phone, email, message } = parsed.data;
+    const subject = `Poptávka — ${name}`;
+    const body = `Jméno: ${name}\nTelefon: ${phone}\nE-mail: ${email}\n\n${message}`;
+    const mailto = `mailto:zamecnictvi@zamecnictvidvoracek.cz?subject=${encodeURIComponent(
+      subject
+    )}&body=${encodeURIComponent(body)}`;
+    window.location.href = mailto;
     setTimeout(() => {
       setSubmitting(false);
       toast.success(t("form.toast.success"));
