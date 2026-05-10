@@ -29,6 +29,13 @@ export function ContactForm() {
       return;
     }
     setSubmitting(true);
+    const { name, phone, email, message } = parsed.data;
+    const subject = `Poptávka — ${name}`;
+    const body = `Jméno: ${name}\nTelefon: ${phone}\nE-mail: ${email}\n\n${message}`;
+    const mailto = `mailto:zamecnictvi@zamecnictvidvoracek.cz?subject=${encodeURIComponent(
+      subject
+    )}&body=${encodeURIComponent(body)}`;
+    window.location.href = mailto;
     setTimeout(() => {
       setSubmitting(false);
       toast.success(t("form.toast.success"));
@@ -52,7 +59,7 @@ export function ContactForm() {
           <label className="block text-xs uppercase tracking-wider mb-2 text-muted-foreground">
             {t("form.phone")}
           </label>
-          <input name="phone" required maxLength={30} className={field} placeholder="+420 376 570 591" />
+          <input name="phone" required maxLength={30} className={field} placeholder="+420 777 749 438" />
         </div>
       </div>
       <div>

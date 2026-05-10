@@ -2,8 +2,7 @@ import { Link } from "@tanstack/react-router";
 import { Phone, Mail, MapPin, Globe, ExternalLink } from "lucide-react";
 import { useLang } from "@/i18n/LanguageProvider";
 
-const mapsUrl =
-  "https://www.google.com/maps/search/?api=1&query=Dobrovsk%C3%A9ho+768%2C+340+22+N%C3%BDrsko";
+const mapsUrl = "https://maps.app.goo.gl/n9KXrdRcBvn5tyLfA";
 
 export function SiteFooter() {
   const { t } = useLang();
@@ -48,8 +47,7 @@ export function SiteFooter() {
             <li className="flex items-start gap-2">
               <Phone className="h-4 w-4 mt-0.5 text-primary shrink-0" />
               <div className="flex flex-col">
-                <a href="tel:+420376570591" className="hover:text-foreground">+420 376 570 591</a>
-                <a href="tel:+420777749422" className="hover:text-foreground">+420 777 749 422</a>
+                <a href="tel:+420777749438" className="hover:text-foreground">+420 777 749 438</a>
               </div>
             </li>
             <li className="flex items-start gap-2">
