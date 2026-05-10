@@ -11,7 +11,7 @@ export const Route = createFileRoute("/kontakt")({
       {
         name: "description",
         content:
-          "Kontaktujte Zámečnictví Dvořáček s.r.o. — telefon +420 376 570 591, e-mail zamecnictvi@zamecnictvidvoracek.cz. Na vaši poptávku reagujeme co nejrychleji.",
+          "Kontaktujte Zámečnictví Dvořáček s.r.o. — telefon +420 777 749 438, e-mail zamecnictvi@zamecnictvidvoracek.cz. Na vaši poptávku reagujeme co nejrychleji.",
       },
     ],
   }),
@@ -19,7 +19,7 @@ export const Route = createFileRoute("/kontakt")({
 });
 
 const mapsUrl =
-  "https://www.google.com/maps/search/?api=1&query=Dobrovsk%C3%A9ho+768%2C+340+22+N%C3%BDrsko";
+  "https://maps.app.goo.gl/n9KXrdRcBvn5tyLfA";
 
 function ContactPage() {
   const { t } = useLang();
@@ -59,11 +59,8 @@ function ContactPage() {
                     {t("contact.phone")}
                   </div>
                   <div className="mt-1 font-display text-base md:text-lg font-bold flex flex-col">
-                    <a href="tel:+420376570591" className="hover:text-primary transition-colors">
-                      +420 376 570 591
-                    </a>
-                    <a href="tel:+420777749422" className="hover:text-primary transition-colors">
-                      +420 777 749 422
+                    <a href="tel:+420777749438" className="hover:text-primary transition-colors">
+                      +420 777 749 438
                     </a>
                   </div>
                 </div>
