@@ -72,7 +72,7 @@ function HomePage() {
 
             <div className="mt-10 flex flex-col sm:flex-row gap-4">
               <a
-                href="tel:+420376570591"
+                href="tel:+420777749438"
                 className="inline-flex items-center justify-center gap-3 bg-primary px-8 py-5 text-sm font-bold uppercase tracking-wider text-primary-foreground transition-transform hover:-translate-y-1"
                 style={{ boxShadow: "var(--shadow-forge)" }}
               >

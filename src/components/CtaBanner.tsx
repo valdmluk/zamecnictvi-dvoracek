@@ -26,7 +26,7 @@ export function CtaBanner() {
           </div>
           <div className="flex">
             <a
-              href="tel:+420376570591"
+              href="tel:+420777749438"
               className="inline-flex items-center justify-center gap-2 bg-primary px-6 py-4 text-sm font-bold uppercase tracking-wider text-primary-foreground"
             >
               <Phone className="h-4 w-4" /> {t("cta.call")}
