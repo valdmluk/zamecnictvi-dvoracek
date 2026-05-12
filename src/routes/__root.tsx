@@ -48,7 +48,7 @@ export const Route = createRootRoute({
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:title", content: "Zakázková kovovýroba | Nýrsko, Plzeňsko" },
+      { name: "twitter:title", content: "Zakázková kovovýroba | Nýrsko, Plzeňský kraj" },
       { name: "description", content: "Zakázková kovovýroba a zámečnictví v Nýrsku. Zábradlí, schodiště, brány, vrata, ploty a ocelové konstrukce na míru." },
       { property: "og:description", content: "Zakázková kovovýroba a zámečnictví v Nýrsku. Zábradlí, schodiště, brány, vrata, ploty a ocelové konstrukce na míru." },
       { name: "twitter:description", content: "Zakázková kovovýroba a zámečnictví v Nýrsku. Zábradlí, schodiště, brány, vrata, ploty a ocelové konstrukce na míru." },
