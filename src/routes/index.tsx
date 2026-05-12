@@ -11,7 +11,7 @@ import type { TranslationKey } from "@/i18n/translations";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Zámečnictví Dvořáček — Kovovýroba na míru | Nýrsko, Plzeňsko" },
+      { title: "Zámečnictví Dvořáček — Kovovýroba na míru | Nýrsko, Plzeňský kraj" },
       {
         name: "description",
         content:
